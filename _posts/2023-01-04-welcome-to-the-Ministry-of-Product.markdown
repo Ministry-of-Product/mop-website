@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to the Ministry of Product"
-date:   2023-01-04 11:03:56 -0800
+date:   2024-01-04 11:03:56 -0800
 categories: mop update
 ---
 Hello!
