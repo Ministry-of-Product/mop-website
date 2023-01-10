@@ -12,7 +12,7 @@ We build prototypes, manage products, and incubate businesses.
 
 ## What we can do for you.
 
-### We do software design and build proof of concepts.
+### We design software and build proof of concepts.
 
 Typically we will start with using Figma to help you think through your design.  Once we have agreed on the scope of the work we can rapidly create versions to let you see what it will feel like for your end customers.  Budget about 1 month for this design and discovery and about 1-3 months to build the “proof of concept” version.
 
