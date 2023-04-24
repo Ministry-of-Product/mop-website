@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+
 ---
 
 The Ministry of Product has been building products and developing software projects since 2017.
