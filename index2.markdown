@@ -6,21 +6,17 @@ layout: home
 ---
 ![Hi](/assets/images/OneRoomWorking.png){:width="100%"}
 # The Ministry of Product
-We build prototypes, manage products, and incubate businesses.
+Data Driven Processes, Product Consulting, and Business Telemetry
 
 ---
 
-Certainly! Below are some descriptions that can serve as introductions to each offering on the front page of your website. Each section aims to provide a brief, clear, and engaging summary of the service, prompting potential clients to explore further or get in touch for more details.
+### 1. **Process Consulting**
+Our Process Consulting services are designed to optimize your organization’s workflows and operations, unlocking a new level of efficiency and effectiveness. We delve deep into your existing processes, identify bottlenecks, and propose innovative solutions tailored to your unique needs and objectives. Whether you're a startup or an established enterprise, we'll help you build a robust operational backbone, ensuring sustained growth and success. Explore a partnership that brings clarity, agility, and excellence to your business operations.
 
 ---
 
-### 1. **Product Management Consulting**
+### 2. **Product Management Consulting**
 We specialize in helping organizations shape outstanding products, balancing innovation, and market demands. From concept validation to market launch, we provide end-to-end support, ensuring your products resonate with your target audience and stand out in the crowded marketplace. Our seasoned experts bring a wealth of experience across diverse industries, equipping your teams with the insights and tools needed to deliver exceptional value to your customers.
-
----
-
-### 2. **General Process Consulting**
-Welcome to a journey of business transformation! Our General Process Consulting services are designed to optimize your organization’s workflows and operations, unlocking a new level of efficiency and effectiveness. We delve deep into your existing processes, identify bottlenecks, and propose innovative solutions tailored to your unique needs and objectives. Whether you're a startup or an established enterprise, we'll help you build a robust operational backbone, ensuring sustained growth and success. Explore a partnership that brings clarity, agility, and excellence to your business operations!
 
 ---
 
