@@ -20,54 +20,36 @@
     </main>
 
     <script>
-      // Gooey Raindrop Effect
+      // Optimized Raindrop Effect
       class Drop {
-        constructor(x, y, size = Math.random() * 8 + 4) {
+        constructor(x, y, size = Math.random() * 6 + 3) {
           this.x = x;
           this.y = y;
           this.size = size;
-          this.speed = size * 0.3 + Math.random() * 2 + 1; // Larger drops fall faster
-          this.trail = [];
-          this.maxTrailLength = Math.floor(size * 2);
+          this.speed = size * 0.4 + Math.random() * 1.5 + 0.5; // Faster, simpler calculation
           this.isSplatting = false;
           this.splatProgress = 0;
-          this.opacity = 0.8;
+          this.opacity = 0.6; // Reduced initial opacity
           this.life = 1.0;
+          this.fadeSpeed = 0.008; // Faster fade
         }
 
         update() {
           if (this.isSplatting) {
-            this.splatProgress += 0.005; // Very slow splat animation
-            
-            // Extremely gradual fade - drops stay visible much longer at bottom
-            if (this.splatProgress < 0.3) {
-              this.opacity = Math.max(0.6, this.opacity - 0.0005); // Barely any fade initially
-            } else if (this.splatProgress < 0.6) {
-              this.opacity = Math.max(0.4, this.opacity - 0.001); // Very slow fade
-            } else if (this.splatProgress < 0.8) {
-              this.opacity = Math.max(0.2, this.opacity - 0.002); // Still slow fade
-            } else {
-              this.opacity = Math.max(0, this.opacity - 0.003); // Gradual final fade
-            }
-            
-            this.life -= 0.002; // Very slow life decay
+            this.splatProgress += 0.02; // Much faster splat animation
+            this.opacity -= this.fadeSpeed;
+            this.life -= 0.01; // Faster life decay
             return this.life > 0;
-          }
-
-          // Add current position to trail
-          this.trail.push({ x: this.x, y: this.y, size: this.size });
-          if (this.trail.length > this.maxTrailLength) {
-            this.trail.shift();
           }
 
           // Move down
           this.y += this.speed;
 
-          // Check if reached bottom - let them fall all the way
+          // Check if reached bottom
           if (this.y > window.innerHeight - 20) {
             this.isSplatting = true;
             this.speed = 0;
-            this.y = window.innerHeight - 20; // Keep them at the bottom
+            this.y = window.innerHeight - 20;
           }
 
           return true;
@@ -80,74 +62,20 @@
           ctx.globalAlpha = this.opacity;
 
           if (this.isSplatting) {
-            // Draw splat effect - more gradual and realistic
-            const splatWidth = this.size * (1 + this.splatProgress * 1.5);
-            const splatHeight = this.size * (1 - this.splatProgress * 0.3);
+            // Simple splat effect - much more efficient
+            const splatWidth = this.size * (1 + this.splatProgress * 1.2);
+            const splatHeight = this.size * (1 - this.splatProgress * 0.2);
             
-            // Add blur effect as the drop fades - more gradual
-            const blurAmount = this.splatProgress * 2; // Less aggressive blur
-            ctx.filter = `blur(${blurAmount}px)`;
-            
-            // Main splat with fading opacity
             ctx.beginPath();
             ctx.ellipse(this.x, this.y, splatWidth, splatHeight, 0, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(255, 255, 255, ${0.12 * this.opacity})`;
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
             ctx.fill();
-            
-            // Add a subtle glow effect that appears early and fades gradually
-            if (this.splatProgress > 0.2) {
-              ctx.beginPath();
-              ctx.ellipse(this.x, this.y, splatWidth * 1.4, splatHeight * 1.4, 0, 0, Math.PI * 2);
-              ctx.fillStyle = `rgba(255, 255, 255, ${0.04 * this.opacity})`;
-              ctx.fill();
-            }
-            
-            // Add an outer halo for mid-fade drops
-            if (this.splatProgress > 0.4) {
-              ctx.beginPath();
-              ctx.ellipse(this.x, this.y, splatWidth * 1.8, splatHeight * 1.8, 0, 0, Math.PI * 2);
-              ctx.fillStyle = `rgba(255, 255, 255, ${0.02 * this.opacity})`;
-              ctx.fill();
-            }
-            
-            // Add a very faint outer ring for heavily faded drops
-            if (this.splatProgress > 0.7 && this.opacity < 0.3) {
-              ctx.beginPath();
-              ctx.ellipse(this.x, this.y, splatWidth * 2.2, splatHeight * 2.2, 0, 0, Math.PI * 2);
-              ctx.fillStyle = `rgba(255, 255, 255, ${0.005 * this.opacity})`;
-              ctx.fill();
-            }
-            
-            // Reset filter
-            ctx.filter = 'none';
           } else {
-            // Draw main drop (elliptical head)
+            // Simple drop - no trail for performance
             ctx.beginPath();
-            ctx.ellipse(this.x, this.y, this.size * 0.6, this.size, 0, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.ellipse(this.x, this.y, this.size * 0.5, this.size * 0.8, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
             ctx.fill();
-
-            // Draw trail with more realistic fading
-            for (let i = 0; i < this.trail.length - 1; i++) {
-              const point = this.trail[i];
-              const nextPoint = this.trail[i + 1];
-              const progress = i / this.trail.length;
-              const trailSize = point.size * (0.2 + progress * 0.8);
-              const trailAlpha = progress * 0.6;
-
-              ctx.globalAlpha = this.opacity * trailAlpha;
-              
-              // Add slight blur to trail segments for more realistic water effect
-              const trailBlur = progress * 0.5;
-              ctx.filter = `blur(${trailBlur}px)`;
-              
-              ctx.beginPath();
-              ctx.ellipse(point.x, point.y, trailSize * 0.3, trailSize * 0.7, 0, 0, Math.PI * 2);
-              ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
-              ctx.fill();
-              
-              ctx.filter = 'none';
-            }
           }
 
           ctx.restore();
@@ -161,7 +89,7 @@
           this.drops = [];
           this.lastSpawn = 0;
           this.spawnInterval = 0;
-          this.maxDrops = 60; // Increased further since drops accumulate at bottom longer
+          this.maxDrops = 20; // Reduced for better performance
           this.animationId = null;
           this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
           this.isLowPerformance = this.detectLowPerformance();
@@ -242,7 +170,7 @@
           if (now - this.lastSpawn > this.spawnInterval) {
             this.spawnDrop();
             this.lastSpawn = now;
-            this.spawnInterval = Math.random() * 160 + 120; // 120-280ms
+                  this.spawnInterval = Math.random() * 300 + 200; // 200-500ms - less frequent
           }
 
           // Update existing drops
@@ -253,16 +181,8 @@
           // Clear canvas
           this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
           
-          // Apply gooey effect with blur and blending
-          this.ctx.filter = 'blur(1px)';
-          this.ctx.globalCompositeOperation = 'screen';
-          
-          // Draw all drops
+          // Draw all drops - no expensive effects
           this.drops.forEach(drop => drop.draw(this.ctx));
-          
-          // Reset filter and blending
-          this.ctx.filter = 'none';
-          this.ctx.globalCompositeOperation = 'source-over';
         }
 
         animate() {
@@ -285,18 +205,19 @@
         }
 
         detectLowPerformance() {
-          // Check for various performance indicators
+          // More aggressive performance detection
           const checks = {
-            // Check device memory (if available)
-            lowMemory: navigator.deviceMemory && navigator.deviceMemory < 4,
+            // Check device memory (if available) - more strict
+            lowMemory: navigator.deviceMemory && navigator.deviceMemory < 6,
             
-            // Check hardware concurrency (CPU cores)
-            lowCores: navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4,
+            // Check hardware concurrency (CPU cores) - more strict
+            lowCores: navigator.hardwareConcurrency && navigator.hardwareConcurrency < 6,
             
             // Check connection speed (if available)
             slowConnection: navigator.connection && 
               (navigator.connection.effectiveType === 'slow-2g' || 
-               navigator.connection.effectiveType === '2g'),
+               navigator.connection.effectiveType === '2g' ||
+               navigator.connection.effectiveType === '3g'),
             
             // Check for mobile devices (generally less performant for canvas)
             isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
@@ -311,8 +232,8 @@
           // Count how many low-performance indicators are present
           const lowPerformanceCount = Object.values(checks).filter(Boolean).length;
           
-          // Disable if 2 or more indicators suggest low performance
-          const shouldDisable = lowPerformanceCount >= 2;
+          // Disable if 1 or more indicators suggest low performance (more aggressive)
+          const shouldDisable = lowPerformanceCount >= 1;
           
           if (shouldDisable) {
             console.log('Low performance detected:', checks);
