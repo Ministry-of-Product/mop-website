@@ -9,15 +9,8 @@
 
     <main class="page-content" aria-label="Content">
       <div class="page-container">
-        <!-- Rain drop elements -->
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
+        <!-- Canvas for gooey raindrop effect -->
+        <canvas id="rainCanvas" class="rain-canvas"></canvas>
         
         <div class="glass-content">
           {{ content }}
@@ -25,6 +18,257 @@
         </div>
       </div>
     </main>
+
+    <script>
+      // Gooey Raindrop Effect
+      class Drop {
+        constructor(x, y, size = Math.random() * 8 + 4) {
+          this.x = x;
+          this.y = y;
+          this.size = size;
+          this.speed = size * 0.3 + Math.random() * 2 + 1; // Larger drops fall faster
+          this.trail = [];
+          this.maxTrailLength = Math.floor(size * 2);
+          this.isSplatting = false;
+          this.splatProgress = 0;
+          this.opacity = 0.8;
+          this.life = 1.0;
+        }
+
+        update() {
+          if (this.isSplatting) {
+            this.splatProgress += 0.01; // Slower splat animation
+            this.opacity = Math.max(0, this.opacity - 0.005); // Much slower fade
+            this.life -= 0.005; // Much slower life decay
+            return this.life > 0;
+          }
+
+          // Add current position to trail
+          this.trail.push({ x: this.x, y: this.y, size: this.size });
+          if (this.trail.length > this.maxTrailLength) {
+            this.trail.shift();
+          }
+
+          // Move down
+          this.y += this.speed;
+
+          // Check if reached bottom
+          if (this.y > window.innerHeight - 50) {
+            this.isSplatting = true;
+            this.speed = 0;
+          }
+
+          return true;
+        }
+
+        draw(ctx) {
+          if (this.life <= 0) return;
+
+          ctx.save();
+          ctx.globalAlpha = this.opacity;
+
+          if (this.isSplatting) {
+            // Draw splat effect - more gradual and realistic
+            const splatWidth = this.size * (1 + this.splatProgress * 1.5);
+            const splatHeight = this.size * (1 - this.splatProgress * 0.3);
+            
+            ctx.beginPath();
+            ctx.ellipse(this.x, this.y, splatWidth, splatHeight, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fill();
+            
+            // Add a subtle glow effect for lingering drops
+            if (this.splatProgress > 0.5) {
+              ctx.beginPath();
+              ctx.ellipse(this.x, this.y, splatWidth * 1.2, splatHeight * 1.2, 0, 0, Math.PI * 2);
+              ctx.fillStyle = `rgba(255, 255, 255, ${0.05 * this.opacity})`;
+              ctx.fill();
+            }
+          } else {
+            // Draw main drop (elliptical head)
+            ctx.beginPath();
+            ctx.ellipse(this.x, this.y, this.size * 0.6, this.size, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fill();
+
+            // Draw trail
+            for (let i = 0; i < this.trail.length - 1; i++) {
+              const point = this.trail[i];
+              const nextPoint = this.trail[i + 1];
+              const progress = i / this.trail.length;
+              const trailSize = point.size * (0.3 + progress * 0.7);
+              const trailAlpha = progress * 0.5;
+
+              ctx.globalAlpha = this.opacity * trailAlpha;
+              ctx.beginPath();
+              ctx.ellipse(point.x, point.y, trailSize * 0.4, trailSize * 0.8, 0, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+              ctx.fill();
+            }
+          }
+
+          ctx.restore();
+        }
+      }
+
+      class RainController {
+        constructor(canvas) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext('2d');
+          this.drops = [];
+          this.lastSpawn = 0;
+          this.spawnInterval = 0;
+          this.maxDrops = 40; // Increased to allow more lingering drops
+          this.animationId = null;
+          this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          
+          this.resize();
+          this.setupEventListeners();
+          
+          if (!this.prefersReducedMotion) {
+            this.start();
+          }
+        }
+
+        setupEventListeners() {
+          window.addEventListener('resize', () => this.resize());
+          
+          // Add click to spawn raindrop functionality
+          this.canvas.addEventListener('click', (e) => {
+            if (this.prefersReducedMotion) return;
+            
+            const rect = this.canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Spawn a drop at click position with a slightly larger size for visibility
+            const size = Math.random() * 8 + 6; // Slightly larger for click-spawned drops
+            this.drops.push(new Drop(x, y, size));
+            
+            // Add a brief visual feedback
+            this.showClickFeedback(x, y);
+          });
+          
+          // Listen for reduced motion preference changes
+          window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) => {
+            this.prefersReducedMotion = e.matches;
+            if (this.prefersReducedMotion) {
+              this.stop();
+            } else {
+              this.start();
+            }
+          });
+        }
+
+        resize() {
+          this.canvas.width = window.innerWidth;
+          this.canvas.height = window.innerHeight;
+        }
+
+        spawnDrop() {
+          // If at max drops, remove the oldest one to make room
+          if (this.drops.length >= this.maxDrops) {
+            this.drops.shift(); // Remove first (oldest) drop
+          }
+          
+          const x = Math.random() * this.canvas.width;
+          const y = -20; // Start above viewport
+          const size = Math.random() * 8 + 4;
+          
+          this.drops.push(new Drop(x, y, size));
+        }
+
+        update() {
+          const now = Date.now();
+          
+          // Spawn new drops
+          if (now - this.lastSpawn > this.spawnInterval) {
+            this.spawnDrop();
+            this.lastSpawn = now;
+            this.spawnInterval = Math.random() * 160 + 120; // 120-280ms
+          }
+
+          // Update existing drops
+          this.drops = this.drops.filter(drop => drop.update());
+        }
+
+        render() {
+          // Clear canvas
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          
+          // Apply gooey effect with blur and blending
+          this.ctx.filter = 'blur(1px)';
+          this.ctx.globalCompositeOperation = 'screen';
+          
+          // Draw all drops
+          this.drops.forEach(drop => drop.draw(this.ctx));
+          
+          // Reset filter and blending
+          this.ctx.filter = 'none';
+          this.ctx.globalCompositeOperation = 'source-over';
+        }
+
+        animate() {
+          this.update();
+          this.render();
+          this.animationId = requestAnimationFrame(() => this.animate());
+        }
+
+        start() {
+          if (!this.animationId) {
+            this.animate();
+          }
+        }
+
+        stop() {
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+          }
+        }
+
+        showClickFeedback(x, y) {
+          // Create a temporary ripple effect at click position
+          const ripple = {
+            x: x,
+            y: y,
+            radius: 0,
+            maxRadius: 30,
+            opacity: 0.6,
+            life: 1.0
+          };
+
+          const animateRipple = () => {
+            ripple.radius += 2;
+            ripple.opacity -= 0.02;
+            ripple.life -= 0.02;
+
+            if (ripple.life > 0) {
+              this.ctx.save();
+              this.ctx.globalAlpha = ripple.opacity;
+              this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+              this.ctx.lineWidth = 2;
+              this.ctx.beginPath();
+              this.ctx.arc(ripple.x, ripple.y, ripple.radius, 0, Math.PI * 2);
+              this.ctx.stroke();
+              this.ctx.restore();
+
+              requestAnimationFrame(animateRipple);
+            }
+          };
+
+          animateRipple();
+        }
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        const canvas = document.getElementById('rainCanvas');
+        if (canvas) {
+          new RainController(canvas);
+        }
+      });
+    </script>
 
   </body>
 

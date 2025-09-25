@@ -30,146 +30,17 @@ body {
   overflow: hidden;
 }
 
-/* Rain effect - random div elements with extra blur */
-.rain-drop {
+/* Canvas for gooey raindrop effect */
+.rain-canvas {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
-  pointer-events: none;
-  z-index: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
-}
-
-/* Individual rain drop animations */
-.rain-drop:nth-child(1) {
-  width: 30px;
-  height: 30px;
-  top: 15%;
-  left: 12%;
-  animation: rainSplatSlide1 4.8s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(2) {
-  width: 25px;
-  height: 25px;
-  top: 35%;
-  left: 78%;
-  animation: rainSplatSlide2 5.6s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(3) {
-  width: 35px;
-  height: 35px;
-  top: 8%;
-  left: 45%;
-  animation: rainSplatSlide3 4s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(4) {
-  width: 20px;
-  height: 20px;
-  top: 65%;
-  left: 22%;
-  animation: rainSplatSlide4 6.4s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(5) {
-  width: 28px;
-  height: 28px;
-  top: 42%;
-  left: 88%;
-  animation: rainSplatSlide5 5.2s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(6) {
-  width: 32px;
-  height: 32px;
-  top: 25%;
-  left: 55%;
-  animation: rainSplatSlide6 6s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(7) {
-  width: 22px;
-  height: 22px;
-  top: 72%;
-  left: 8%;
-  animation: rainSplatSlide7 4.4s ease-out infinite;
-  transform: none;
-}
-
-.rain-drop:nth-child(8) {
-  width: 26px;
-  height: 26px;
-  top: 18%;
-  left: 68%;
-  animation: rainSplatSlide8 5.44s ease-out infinite;
-  transform: none;
-}
-
-/* Keyframe animations for combined splat-slide effect */
-@keyframes rainSplatSlide1 {
-  0% { opacity: 0; transform: scale(0.3); top: 15%; }
-  2% { opacity: 1; transform: scale(1.1); top: 15%; }
-  4% { opacity: 0.9; transform: scale(1); top: 15%; }
-  100% { opacity: 0; transform: scale(0.8); top: 100vh; }
-}
-
-@keyframes rainSplatSlide2 {
-  0% { opacity: 0; transform: scale(0.2); top: 35%; }
-  2.5% { opacity: 1; transform: scale(1.2); top: 35%; }
-  4.5% { opacity: 0.8; transform: scale(1); top: 35%; }
-  100% { opacity: 0; transform: scale(0.7); top: 100vh; }
-}
-
-@keyframes rainSplatSlide3 {
-  0% { opacity: 0; transform: scale(0.4); top: 8%; }
-  1.5% { opacity: 1; transform: scale(1.3); top: 8%; }
-  3.5% { opacity: 0.9; transform: scale(1); top: 8%; }
-  100% { opacity: 0; transform: scale(0.6); top: 100vh; }
-}
-
-@keyframes rainSplatSlide4 {
-  0% { opacity: 0; transform: scale(0.1); top: 65%; }
-  3% { opacity: 1; transform: scale(1.1); top: 65%; }
-  5% { opacity: 0.7; transform: scale(1); top: 65%; }
-  100% { opacity: 0; transform: scale(0.9); top: 100vh; }
-}
-
-@keyframes rainSplatSlide5 {
-  0% { opacity: 0; transform: scale(0.3); top: 42%; }
-  2.25% { opacity: 1; transform: scale(1.2); top: 42%; }
-  4.25% { opacity: 0.8; transform: scale(1); top: 42%; }
-  100% { opacity: 0; transform: scale(0.8); top: 100vh; }
-}
-
-@keyframes rainSplatSlide6 {
-  0% { opacity: 0; transform: scale(0.2); top: 25%; }
-  2.75% { opacity: 1; transform: scale(1.1); top: 25%; }
-  4.75% { opacity: 0.9; transform: scale(1); top: 25%; }
-  100% { opacity: 0; transform: scale(0.7); top: 100vh; }
-}
-
-@keyframes rainSplatSlide7 {
-  0% { opacity: 0; transform: scale(0.3); top: 72%; }
-  1.75% { opacity: 1; transform: scale(1.3); top: 72%; }
-  3.75% { opacity: 0.8; transform: scale(1); top: 72%; }
-  100% { opacity: 0; transform: scale(0.6); top: 100vh; }
-}
-
-@keyframes rainSplatSlide8 {
-  0% { opacity: 0; transform: scale(0.2); top: 18%; }
-  2.5% { opacity: 1; transform: scale(1.2); top: 18%; }
-  4.5% { opacity: 0.9; transform: scale(1); top: 18%; }
-  100% { opacity: 0; transform: scale(0.8); top: 100vh; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 1;
+  opacity: 0.8;
+  cursor: crosshair;
 }
 
 /* Content wrapper with glass styling */
