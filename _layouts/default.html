@@ -37,16 +37,20 @@
 
         update() {
           if (this.isSplatting) {
-            this.splatProgress += 0.01; // Slower splat animation
+            this.splatProgress += 0.005; // Very slow splat animation
             
-            // More realistic fade - starts slow, then accelerates
-            if (this.splatProgress < 0.7) {
-              this.opacity = Math.max(0.3, this.opacity - 0.002); // Very slow initial fade
+            // Extremely gradual fade - drops stay visible much longer at bottom
+            if (this.splatProgress < 0.3) {
+              this.opacity = Math.max(0.6, this.opacity - 0.0005); // Barely any fade initially
+            } else if (this.splatProgress < 0.6) {
+              this.opacity = Math.max(0.4, this.opacity - 0.001); // Very slow fade
+            } else if (this.splatProgress < 0.8) {
+              this.opacity = Math.max(0.2, this.opacity - 0.002); // Still slow fade
             } else {
-              this.opacity = Math.max(0, this.opacity - 0.015); // Faster fade at the end
+              this.opacity = Math.max(0, this.opacity - 0.003); // Gradual final fade
             }
             
-            this.life -= 0.005; // Much slower life decay
+            this.life -= 0.002; // Very slow life decay
             return this.life > 0;
           }
 
@@ -59,10 +63,11 @@
           // Move down
           this.y += this.speed;
 
-          // Check if reached bottom
-          if (this.y > window.innerHeight - 50) {
+          // Check if reached bottom - let them fall all the way
+          if (this.y > window.innerHeight - 20) {
             this.isSplatting = true;
             this.speed = 0;
+            this.y = window.innerHeight - 20; // Keep them at the bottom
           }
 
           return true;
@@ -79,29 +84,37 @@
             const splatWidth = this.size * (1 + this.splatProgress * 1.5);
             const splatHeight = this.size * (1 - this.splatProgress * 0.3);
             
-            // Add blur effect as the drop fades
-            const blurAmount = this.splatProgress * 3; // More blur as it fades
+            // Add blur effect as the drop fades - more gradual
+            const blurAmount = this.splatProgress * 2; // Less aggressive blur
             ctx.filter = `blur(${blurAmount}px)`;
             
             // Main splat with fading opacity
             ctx.beginPath();
             ctx.ellipse(this.x, this.y, splatWidth, splatHeight, 0, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(255, 255, 255, ${0.1 * this.opacity})`;
+            ctx.fillStyle = `rgba(255, 255, 255, ${0.12 * this.opacity})`;
             ctx.fill();
             
-            // Add a subtle glow effect that also fades
-            if (this.splatProgress > 0.3) {
+            // Add a subtle glow effect that appears early and fades gradually
+            if (this.splatProgress > 0.2) {
               ctx.beginPath();
-              ctx.ellipse(this.x, this.y, splatWidth * 1.3, splatHeight * 1.3, 0, 0, Math.PI * 2);
-              ctx.fillStyle = `rgba(255, 255, 255, ${0.03 * this.opacity})`;
+              ctx.ellipse(this.x, this.y, splatWidth * 1.4, splatHeight * 1.4, 0, 0, Math.PI * 2);
+              ctx.fillStyle = `rgba(255, 255, 255, ${0.04 * this.opacity})`;
               ctx.fill();
             }
             
-            // Add an outer halo for very faded drops
-            if (this.splatProgress > 0.6 && this.opacity < 0.5) {
+            // Add an outer halo for mid-fade drops
+            if (this.splatProgress > 0.4) {
               ctx.beginPath();
               ctx.ellipse(this.x, this.y, splatWidth * 1.8, splatHeight * 1.8, 0, 0, Math.PI * 2);
-              ctx.fillStyle = `rgba(255, 255, 255, ${0.01 * this.opacity})`;
+              ctx.fillStyle = `rgba(255, 255, 255, ${0.02 * this.opacity})`;
+              ctx.fill();
+            }
+            
+            // Add a very faint outer ring for heavily faded drops
+            if (this.splatProgress > 0.7 && this.opacity < 0.3) {
+              ctx.beginPath();
+              ctx.ellipse(this.x, this.y, splatWidth * 2.2, splatHeight * 2.2, 0, 0, Math.PI * 2);
+              ctx.fillStyle = `rgba(255, 255, 255, ${0.005 * this.opacity})`;
               ctx.fill();
             }
             
@@ -148,7 +161,7 @@
           this.drops = [];
           this.lastSpawn = 0;
           this.spawnInterval = 0;
-          this.maxDrops = 40; // Increased to allow more lingering drops
+          this.maxDrops = 60; // Increased further since drops accumulate at bottom longer
           this.animationId = null;
           this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
           this.isLowPerformance = this.detectLowPerformance();
@@ -197,6 +210,16 @@
         resize() {
           this.canvas.width = window.innerWidth;
           this.canvas.height = window.innerHeight;
+        }
+
+        // Update drop positions to account for scroll
+        updateDropPositions() {
+          this.drops.forEach(drop => {
+            if (!drop.isSplatting) {
+              // Keep drops at their current viewport position
+              // No need to adjust for scroll since canvas is fixed
+            }
+          });
         }
 
         spawnDrop() {
