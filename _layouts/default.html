@@ -68,7 +68,7 @@
             
             ctx.beginPath();
             ctx.ellipse(this.x, this.y, splatWidth, splatHeight, 0, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity * 0.15})`; // Match current opacity
             ctx.fill();
           } else {
             // Simple drop - no trail for performance
