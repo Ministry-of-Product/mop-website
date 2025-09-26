@@ -26,13 +26,25 @@ body {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Main page container with glass effect */
-.page-container {
-  position: relative;
-  min-height: 100vh;
+/* Fixed blur layer that covers the entire background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Main page container */
+.page-container {
+  position: relative;
+  min-height: 100vh;
   z-index: 0;
 }
 
