@@ -8,10 +8,10 @@
 
 /* Custom styles for Ministry of Product */
 
-/* Ensure html and body can scroll */
+/* Ensure html and body don't interfere with glass scrolling */
 html, body {
   height: 100%;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 /* Full page background with fogged glass effect */
@@ -19,21 +19,35 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-image: url('/assets/images/OneRoomWorking.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Main page container with glass effect */
+/* Fixed background image layer */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/OneRoomWorking.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -3;
+}
+
+/* Fixed blur layer */
 .page-container {
-  position: relative;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  z-index: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Canvas for gooey raindrop effect */
@@ -43,29 +57,38 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: auto;
-  z-index: 1;
+  pointer-events: none;
+  z-index: -2;
   opacity: 0.8;
-  cursor: crosshair;
 }
 
 /* Content wrapper with glass styling */
 .glass-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  margin: 1rem;
-  padding: 4rem 3rem;
+  margin: 1rem auto;
+  padding: 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: calc(100vh - 2rem);
+  height: calc(100vh - 2rem);
   margin-bottom: 2rem;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  /* Force scrollbar to appear on this element */
+  scrollbar-width: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollable content area inside glass */
+.glass-content .scrollable-content {
+  padding: 4rem 3rem;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 /* Hero section styling - first h1 becomes hero title */
@@ -197,12 +220,24 @@ body {
 .page-content {
   padding: 0;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+.page-container {
+  overflow: visible;
 }
 
 .wrapper {
   max-width: none;
   padding: 0;
+  overflow: visible !important;
+}
+
+/* Ensure no parent elements have scrollbars */
+main, .page-content, .page-container, body, html {
+  overflow: visible !important;
 }
 
 /* Responsive design */
@@ -217,10 +252,14 @@ body {
   }
   
   .glass-content {
-    padding: 3rem 2rem;
-    margin: 0.5rem;
+    padding: 0;
+    margin: 0.5rem auto;
     max-width: calc(100vw - 1rem);
-    min-height: calc(120vh - 1rem);
+    height: calc(100vh - 1rem);
+  }
+  
+  .glass-content .scrollable-content {
+    padding: 3rem 2rem;
   }
   
   .glass-content h2 {
@@ -254,10 +293,14 @@ body {
   }
   
   .glass-content {
-    padding: 2rem 1.5rem;
-    margin: 0.25rem;
+    padding: 0;
+    margin: 0.25rem auto;
     max-width: calc(100vw - 0.5rem);
-    min-height: calc(120vh - 0.5rem);
+    height: calc(100vh - 0.5rem);
+  }
+  
+  .glass-content .scrollable-content {
+    padding: 2rem 1.5rem;
   }
   
   .glass-content h2 {

@@ -12,10 +12,12 @@
         <!-- Canvas for gooey raindrop effect -->
         <canvas id="rainCanvas" class="rain-canvas"></canvas>
         
-        <div class="glass-content">
+               <div class="glass-content">
+                 <div class="scrollable-content">
         {{ content }}
-          {%- include footer.html -%}
-        </div>
+                   {%- include footer.html -%}
+                 </div>
+               </div>
       </div>
     </main>
 
@@ -108,16 +110,19 @@
         setupEventListeners() {
           window.addEventListener('resize', () => this.resize());
           
-          // Add click to spawn raindrop functionality
-          this.canvas.addEventListener('click', (e) => {
+          // Add click to spawn raindrop functionality - only when clicking outside glass content
+          document.addEventListener('click', (e) => {
             if (this.prefersReducedMotion || this.isLowPerformance) return;
             
-            const rect = this.canvas.getBoundingClientRect();
-            const scaleX = this.canvas.width / rect.width;
-            const scaleY = this.canvas.height / rect.height;
-            const x = (e.clientX - rect.left) * scaleX;
-            const y = (e.clientY - rect.top) * scaleY;
+            // Check if click is inside glass content
+            const glassContent = document.querySelector('.glass-content');
+            if (glassContent && glassContent.contains(e.target)) {
+              return; // Don't spawn drops when clicking inside glass content
+            }
             
+            // Spawn a drop at click position
+            const x = e.clientX;
+            const y = e.clientY;
             
             // Spawn a drop at click position with a slightly larger size for visibility
             const size = Math.random() * 8 + 6; // Slightly larger for click-spawned drops
