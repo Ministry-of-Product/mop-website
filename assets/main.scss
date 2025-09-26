@@ -1,0 +1,386 @@
+---
+---
+
+@import "minima";
+
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Custom styles for Ministry of Product */
+
+/* Ensure html and body can scroll */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Full page background with fogged glass effect */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('/assets/images/OneRoomWorking.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Fixed blur layer that covers the entire background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Main page container */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+/* Canvas for gooey raindrop effect */
+.rain-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: -2;
+  opacity: 0.8;
+  cursor: crosshair;
+}
+
+/* Content wrapper with glass styling */
+.glass-content {
+  position: relative;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  margin: 1rem;
+  padding: 4rem 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 2rem);
+  margin-bottom: 2rem;
+}
+
+/* Hero section styling - first h1 becomes hero title */
+.glass-content > h1:first-child {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+/* First paragraph after h1 becomes hero subtitle */
+.glass-content > h1:first-child + p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Main content styling */
+.main-content {
+  color: white;
+}
+
+.main-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.main-content h3 {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.main-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure all content within glass pane is styled */
+.glass-content h1,
+.glass-content h2,
+.glass-content h3,
+.glass-content h4,
+.glass-content h5,
+.glass-content h6 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Enhanced h2 styling */
+.glass-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* Enhanced h3 styling */
+.glass-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.005em;
+}
+
+.glass-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.glass-content ul,
+.glass-content ol {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.glass-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styling within glass pane */
+.glass-content footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #666;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  background: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 2% auto;
+  padding: 0;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 680px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 1001;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  background: white;
+  text-decoration: none;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 836px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Override theme defaults */
+.page-content {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .glass-content > h1:first-child {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+  
+  .glass-content > h1:first-child + p {
+    font-size: 1.2rem;
+  }
+  
+  .glass-content {
+    padding: 3rem 2rem;
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+    min-height: calc(120vh - 1rem);
+  }
+  
+  .glass-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .glass-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .glass-content footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 5% auto;
+  }
+  
+  .modal-content iframe {
+    height: 600px;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  body {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-content > h1:first-child {
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+  
+  .glass-content > h1:first-child + p {
+    font-size: 1rem;
+  }
+  
+  .glass-content {
+    padding: 2rem 1.5rem;
+    margin: 0.25rem;
+    max-width: calc(100vw - 0.5rem);
+    min-height: calc(120vh - 0.5rem);
+  }
+  
+  .glass-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .glass-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .glass-content footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .modal-content {
+    width: 98%;
+    margin: 10% auto;
+  }
+  
+  .modal-content iframe {
+    height: 500px;
+  }
+  
+  .cta-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

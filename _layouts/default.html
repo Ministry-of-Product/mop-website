@@ -5,16 +5,281 @@
 
   <body>
 
-
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="page-container">
+        <!-- Canvas for gooey raindrop effect -->
+        <canvas id="rainCanvas" class="rain-canvas"></canvas>
+        
+        <div class="glass-content">
         {{ content }}
+          {%- include footer.html -%}
+        </div>
       </div>
     </main>
 
-    {%- include footer.html -%}
+    <script>
+      // Optimized Raindrop Effect
+      class Drop {
+        constructor(x, y, size = Math.random() * 6 + 3) {
+          this.x = x;
+          this.y = y;
+          this.size = size;
+          this.speed = size * 0.4 + Math.random() * 1.5 + 0.5; // Faster, simpler calculation
+          this.isSplatting = false;
+          this.splatProgress = 0;
+          this.opacity = 0.6; // Reduced initial opacity
+          this.life = 1.0;
+          this.fadeSpeed = 0.008; // Faster fade
+        }
+
+        update() {
+          if (this.isSplatting) {
+            this.splatProgress += 0.02; // Much faster splat animation
+            this.opacity -= this.fadeSpeed;
+            this.life -= 0.01; // Faster life decay
+            return this.life > 0;
+          }
+
+          // Move down
+          this.y += this.speed;
+
+          // Check if reached bottom
+          if (this.y > window.innerHeight - 20) {
+            this.isSplatting = true;
+            this.speed = 0;
+            this.y = window.innerHeight - 20;
+          }
+
+          return true;
+        }
+
+        draw(ctx) {
+          if (this.life <= 0) return;
+
+          ctx.save();
+          ctx.globalAlpha = this.opacity;
+
+          if (this.isSplatting) {
+            // Simple splat effect - much more efficient
+            const splatWidth = this.size * (1 + this.splatProgress * 1.2);
+            const splatHeight = this.size * (1 - this.splatProgress * 0.2);
+            
+            ctx.beginPath();
+            ctx.ellipse(this.x, this.y, splatWidth, splatHeight, 0, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity * 0.15})`; // Match current opacity
+            ctx.fill();
+          } else {
+            // Simple drop - no trail for performance
+            ctx.beginPath();
+            ctx.ellipse(this.x, this.y, this.size * 0.5, this.size * 0.8, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+            ctx.fill();
+          }
+
+          ctx.restore();
+        }
+      }
+
+      class RainController {
+        constructor(canvas) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext('2d');
+          this.drops = [];
+          this.lastSpawn = 0;
+          this.spawnInterval = 0;
+          this.maxDrops = 20; // Reduced for better performance
+          this.animationId = null;
+          this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          this.isLowPerformance = this.detectLowPerformance();
+          
+          this.resize();
+          this.setupEventListeners();
+          
+          if (!this.prefersReducedMotion && !this.isLowPerformance) {
+            this.start();
+          } else if (this.isLowPerformance) {
+            console.log('Rain effect disabled due to low performance detection');
+            this.showPerformanceMessage();
+          }
+        }
+
+        setupEventListeners() {
+          window.addEventListener('resize', () => this.resize());
+          
+          // Add click to spawn raindrop functionality
+          this.canvas.addEventListener('click', (e) => {
+            if (this.prefersReducedMotion || this.isLowPerformance) return;
+            
+            const rect = this.canvas.getBoundingClientRect();
+            const scaleX = this.canvas.width / rect.width;
+            const scaleY = this.canvas.height / rect.height;
+            const x = (e.clientX - rect.left) * scaleX;
+            const y = (e.clientY - rect.top) * scaleY;
+            
+            
+            // Spawn a drop at click position with a slightly larger size for visibility
+            const size = Math.random() * 8 + 6; // Slightly larger for click-spawned drops
+            this.drops.push(new Drop(x, y, size));
+          });
+          
+          // Listen for reduced motion preference changes
+          window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) => {
+            this.prefersReducedMotion = e.matches;
+            if (this.prefersReducedMotion) {
+              this.stop();
+            } else {
+              this.start();
+            }
+          });
+        }
+
+        resize() {
+          this.canvas.width = window.innerWidth;
+          this.canvas.height = window.innerHeight;
+        }
+
+        // Update drop positions to account for scroll
+        updateDropPositions() {
+          this.drops.forEach(drop => {
+            if (!drop.isSplatting) {
+              // Keep drops at their current viewport position
+              // No need to adjust for scroll since canvas is fixed
+            }
+          });
+        }
+
+        spawnDrop() {
+          // If at max drops, remove the oldest one to make room
+          if (this.drops.length >= this.maxDrops) {
+            this.drops.shift(); // Remove first (oldest) drop
+          }
+          
+          const x = Math.random() * this.canvas.width;
+          const y = -20; // Start above viewport
+          const size = Math.random() * 8 + 4;
+          
+          this.drops.push(new Drop(x, y, size));
+        }
+
+        update() {
+          const now = Date.now();
+          
+          // Spawn new drops
+          if (now - this.lastSpawn > this.spawnInterval) {
+            this.spawnDrop();
+            this.lastSpawn = now;
+                  this.spawnInterval = Math.random() * 300 + 200; // 200-500ms - less frequent
+          }
+
+          // Update existing drops
+          this.drops = this.drops.filter(drop => drop.update());
+        }
+
+        render() {
+          // Clear canvas
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          
+          // Draw all drops - no expensive effects
+          this.drops.forEach(drop => drop.draw(this.ctx));
+        }
+
+        animate() {
+          this.update();
+          this.render();
+          this.animationId = requestAnimationFrame(() => this.animate());
+        }
+
+        start() {
+          if (!this.animationId) {
+            this.animate();
+          }
+        }
+
+        stop() {
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+          }
+        }
+
+        detectLowPerformance() {
+          // More aggressive performance detection
+          const checks = {
+            // Check device memory (if available) - more strict
+            lowMemory: navigator.deviceMemory && navigator.deviceMemory < 6,
+            
+            // Check hardware concurrency (CPU cores) - more strict
+            lowCores: navigator.hardwareConcurrency && navigator.hardwareConcurrency < 6,
+            
+            // Check connection speed (if available)
+            slowConnection: navigator.connection && 
+              (navigator.connection.effectiveType === 'slow-2g' || 
+               navigator.connection.effectiveType === '2g' ||
+               navigator.connection.effectiveType === '3g'),
+            
+            // Check for mobile devices (generally less performant for canvas)
+            isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+            
+            // Check for older browsers
+            oldBrowser: !window.requestAnimationFrame || !window.CanvasRenderingContext2D,
+            
+            // Check for reduced data usage preference
+            saveData: navigator.connection && navigator.connection.saveData
+          };
+
+          // Count how many low-performance indicators are present
+          const lowPerformanceCount = Object.values(checks).filter(Boolean).length;
+          
+          // Disable if 1 or more indicators suggest low performance (more aggressive)
+          const shouldDisable = lowPerformanceCount >= 1;
+          
+          if (shouldDisable) {
+            console.log('Low performance detected:', checks);
+          }
+          
+          return shouldDisable;
+        }
+
+        showPerformanceMessage() {
+          // Add a subtle indicator that the rain effect is disabled for performance
+          const message = document.createElement('div');
+          message.style.cssText = `
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 10;
+            opacity: 0.8;
+            pointer-events: none;
+          `;
+          message.textContent = 'Rain effect disabled for better performance';
+          document.body.appendChild(message);
+          
+          // Remove the message after 5 seconds
+          setTimeout(() => {
+            if (message.parentNode) {
+              message.parentNode.removeChild(message);
+            }
+          }, 5000);
+        }
+
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        const canvas = document.getElementById('rainCanvas');
+        if (canvas) {
+          new RainController(canvas);
+        }
+      });
+    </script>
 
   </body>
 
