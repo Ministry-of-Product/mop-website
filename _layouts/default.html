@@ -8,7 +8,7 @@
     {%- comment -%}
       MENUBAR/HEADER - COMMENTED OUT TEMPORARILY
       TODO: Uncomment this when we have more content and need navigation
-      {%- include header.html -%}
+    {%- include header.html -%}
     {%- endcomment -%}
 
     <main class="page-content" aria-label="Content">
@@ -95,26 +95,34 @@
           this.spawnInterval = 0;
           this.maxDrops = 20; // Reduced for better performance
           this.animationId = null;
+          this.hasStarted = false; // Track if animation has been started
           this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
           this.isLowPerformance = this.detectLowPerformance();
           
           this.resize();
           this.setupEventListeners();
           
-          if (!this.prefersReducedMotion && !this.isLowPerformance) {
-            this.start();
-          } else if (this.isLowPerformance) {
-            console.log('Rain effect disabled due to low performance detection');
-            this.showPerformanceMessage();
-          }
+          // Don't start automatically - wait for user click for better performance
+          // if (!this.prefersReducedMotion && !this.isLowPerformance) {
+          //   this.start();
+          // } else if (this.isLowPerformance) {
+          //   console.log('Rain effect disabled due to low performance detection');
+          //   this.showPerformanceMessage();
+          // }
         }
 
         setupEventListeners() {
           window.addEventListener('resize', () => this.resize());
           
-          // Add click to spawn raindrop functionality
+          // Add click to start animation and spawn raindrop functionality
           this.canvas.addEventListener('click', (e) => {
             if (this.prefersReducedMotion || this.isLowPerformance) return;
+            
+            // Start animation on first click if not already started
+            if (!this.hasStarted) {
+              this.hasStarted = true;
+              this.start();
+            }
             
             const rect = this.canvas.getBoundingClientRect();
             const scaleX = this.canvas.width / rect.width;
