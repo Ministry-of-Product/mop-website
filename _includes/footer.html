@@ -6,11 +6,54 @@
 <div id="contactModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true" width="640" height="836" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe 
+      id="googleFormIframe"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true" 
+      width="640" 
+      height="836" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0"
+      allow="fullscreen"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Contact the Ministry of Product">
+      Loading…
+    </iframe>
   </div>
 </div>
 
 <script>
+// Suppress harmless Google Forms font loading errors
+(function() {
+  // Store original console methods
+  const originalError = console.error;
+  const originalWarn = console.warn;
+  
+  // Override console.error to filter Google Forms font errors
+  console.error = function(...args) {
+    const message = args.join(' ');
+    // Filter out Google Forms font loading errors
+    if (message.includes('docs.google.com') && 
+        (message.includes('fonts') || 
+         message.includes('woff2') || 
+         message.includes('ERR_FILE_NOT_FOUND') ||
+         message.includes('filesystem:'))) {
+      return; // Suppress this error
+    }
+    // Allow other errors through
+    originalError.apply(console, args);
+  };
+  
+  // Also handle unhandled promise rejections that might be related
+  window.addEventListener('unhandledrejection', function(e) {
+    const reason = e.reason ? String(e.reason) : '';
+    if (reason.includes('docs.google.com') && reason.includes('fonts')) {
+      e.preventDefault();
+    }
+  });
+})();
+
 // Modal functionality
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('contactModal');
@@ -33,5 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.style.display = 'none';
     }
   }
+
 });
 </script>
