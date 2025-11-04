@@ -192,6 +192,7 @@ body::before {
   grid-row: 4;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  align-self: end;
 }
 
 .glass-content > h2:first-of-type ~ h3:nth-of-type(2) {
@@ -199,6 +200,7 @@ body::before {
   grid-row: 4;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  align-self: end;
 }
 
 .glass-content > h2:first-of-type ~ h3:nth-of-type(3) {
@@ -206,6 +208,7 @@ body::before {
   grid-row: 4;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  align-self: end;
 }
 
 /* Paragraphs follow their h3 in the same column, next row */
