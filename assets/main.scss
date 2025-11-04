@@ -165,45 +165,66 @@ body::before {
 .glass-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
   gap: 2rem;
   align-items: start;
 }
 
 /* H1, first paragraph, and H2 span all columns */
-.glass-content > h1,
-.glass-content > h1:first-child + p,
+.glass-content > h1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.glass-content > h1:first-child + p {
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
 .glass-content > h2 {
   grid-column: 1 / -1;
+  grid-row: 3;
 }
 
-/* First h3 and its paragraph go to column 1 */
+/* All three h3 headings in the same row (after h2 which is row 3) */
 .glass-content > h2:first-of-type ~ h3:nth-of-type(1) {
   grid-column: 1;
+  grid-row: 4;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.glass-content > h2:first-of-type ~ h3:nth-of-type(1) + p {
-  grid-column: 1;
-}
-
-/* Second h3 and its paragraph go to column 2 */
 .glass-content > h2:first-of-type ~ h3:nth-of-type(2) {
   grid-column: 2;
+  grid-row: 4;
   margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.glass-content > h2:first-of-type ~ h3:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs follow their h3 in the same column, next row */
+.glass-content > h2:first-of-type ~ h3:nth-of-type(1) + p {
+  grid-column: 1;
+  grid-row: 5;
+  margin-top: 0;
 }
 
 .glass-content > h2:first-of-type ~ h3:nth-of-type(2) + p {
   grid-column: 2;
-}
-
-/* Third h3 and its paragraph go to column 3 */
-.glass-content > h2:first-of-type ~ h3:nth-of-type(3) {
-  grid-column: 3;
-  margin-top: 2rem;
+  grid-row: 5;
+  margin-top: 0;
 }
 
 .glass-content > h2:first-of-type ~ h3:nth-of-type(3) + p {
   grid-column: 3;
+  grid-row: 5;
+  margin-top: 0;
 }
 
 /* Footer spans all columns */
