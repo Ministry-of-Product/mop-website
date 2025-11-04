@@ -86,16 +86,7 @@ body::before {
   font-weight: 900;
   color: white;
   margin-bottom: 1rem;
-  text-shadow: 
-    -2px -2px 0 rgba(0, 0, 0, 0.9),
-    2px -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 2px 0 rgba(0, 0, 0, 0.9),
-    2px 2px 0 rgba(0, 0, 0, 0.9),
-    0 -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 0 0 rgba(0, 0, 0, 0.9),
-    2px 0 0 rgba(0, 0, 0, 0.9),
-    0 2px 0 rgba(0, 0, 0, 0.9),
-    0 0 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   line-height: 1.1;
   text-align: center;
   letter-spacing: -0.02em;
@@ -106,16 +97,7 @@ body::before {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 3rem;
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.9),
-    1px -1px 0 rgba(0, 0, 0, 0.9),
-    -1px 1px 0 rgba(0, 0, 0, 0.9),
-    1px 1px 0 rgba(0, 0, 0, 0.9),
-    0 -1px 0 rgba(0, 0, 0, 0.9),
-    -1px 0 0 rgba(0, 0, 0, 0.9),
-    1px 0 0 rgba(0, 0, 0, 0.9),
-    0 1px 0 rgba(0, 0, 0, 0.9),
-    0 0 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   line-height: 1.4;
   text-align: center;
 }
@@ -129,16 +111,7 @@ body::before {
   color: white;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  text-shadow: 
-    -2px -2px 0 rgba(0, 0, 0, 0.9),
-    2px -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 2px 0 rgba(0, 0, 0, 0.9),
-    2px 2px 0 rgba(0, 0, 0, 0.9),
-    0 -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 0 0 rgba(0, 0, 0, 0.9),
-    2px 0 0 rgba(0, 0, 0, 0.9),
-    0 2px 0 rgba(0, 0, 0, 0.9),
-    0 0 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
@@ -147,16 +120,7 @@ body::before {
   font-size: 1.8rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.9),
-    1px -1px 0 rgba(0, 0, 0, 0.9),
-    -1px 1px 0 rgba(0, 0, 0, 0.9),
-    1px 1px 0 rgba(0, 0, 0, 0.9),
-    0 -1px 0 rgba(0, 0, 0, 0.9),
-    -1px 0 0 rgba(0, 0, 0, 0.9),
-    1px 0 0 rgba(0, 0, 0, 0.9),
-    0 1px 0 rgba(0, 0, 0, 0.9),
-    0 0 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .main-content p {
@@ -164,16 +128,7 @@ body::before {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.85),
-    1px -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 1px 0 rgba(0, 0, 0, 0.85),
-    1px 1px 0 rgba(0, 0, 0, 0.85),
-    0 -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 0 0 rgba(0, 0, 0, 0.85),
-    1px 0 0 rgba(0, 0, 0, 0.85),
-    0 1px 0 rgba(0, 0, 0, 0.85),
-    0 0 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Ensure all content within glass pane is styled */
@@ -184,16 +139,7 @@ body::before {
 .glass-content h5,
 .glass-content h6 {
   color: white;
-  text-shadow: 
-    -2px -2px 0 rgba(0, 0, 0, 0.9),
-    2px -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 2px 0 rgba(0, 0, 0, 0.9),
-    2px 2px 0 rgba(0, 0, 0, 0.9),
-    0 -2px 0 rgba(0, 0, 0, 0.9),
-    -2px 0 0 rgba(0, 0, 0, 0.9),
-    2px 0 0 rgba(0, 0, 0, 0.9),
-    0 2px 0 rgba(0, 0, 0, 0.9),
-    0 0 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -210,9 +156,59 @@ body::before {
 .glass-content h3 {
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 2.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   letter-spacing: -0.005em;
+}
+
+/* 3-column layout: Use CSS Grid on the parent and place items */
+.glass-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+/* H1, first paragraph, and H2 span all columns */
+.glass-content > h1,
+.glass-content > h1:first-child + p,
+.glass-content > h2 {
+  grid-column: 1 / -1;
+}
+
+/* First h3 and its paragraph go to column 1 */
+.glass-content > h2:first-of-type ~ h3:nth-of-type(1) {
+  grid-column: 1;
+  margin-top: 2rem;
+}
+
+.glass-content > h2:first-of-type ~ h3:nth-of-type(1) + p {
+  grid-column: 1;
+}
+
+/* Second h3 and its paragraph go to column 2 */
+.glass-content > h2:first-of-type ~ h3:nth-of-type(2) {
+  grid-column: 2;
+  margin-top: 2rem;
+}
+
+.glass-content > h2:first-of-type ~ h3:nth-of-type(2) + p {
+  grid-column: 2;
+}
+
+/* Third h3 and its paragraph go to column 3 */
+.glass-content > h2:first-of-type ~ h3:nth-of-type(3) {
+  grid-column: 3;
+  margin-top: 2rem;
+}
+
+.glass-content > h2:first-of-type ~ h3:nth-of-type(3) + p {
+  grid-column: 3;
+}
+
+/* Footer spans all columns */
+.glass-content > footer {
+  grid-column: 1 / -1;
 }
 
 .glass-content p {
@@ -220,31 +216,13 @@ body::before {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.85),
-    1px -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 1px 0 rgba(0, 0, 0, 0.85),
-    1px 1px 0 rgba(0, 0, 0, 0.85),
-    0 -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 0 0 rgba(0, 0, 0, 0.85),
-    1px 0 0 rgba(0, 0, 0, 0.85),
-    0 1px 0 rgba(0, 0, 0, 0.85),
-    0 0 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .glass-content ul,
 .glass-content ol {
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.85),
-    1px -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 1px 0 rgba(0, 0, 0, 0.85),
-    1px 1px 0 rgba(0, 0, 0, 0.85),
-    0 -1px 0 rgba(0, 0, 0, 0.85),
-    -1px 0 0 rgba(0, 0, 0, 0.85),
-    1px 0 0 rgba(0, 0, 0, 0.85),
-    0 1px 0 rgba(0, 0, 0, 0.85),
-    0 0 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .glass-content li {
@@ -374,6 +352,17 @@ body::before {
     margin: 0.5rem;
     max-width: calc(100vw - 1rem);
     min-height: calc(120vh - 1rem);
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+  }
+  
+  /* Stack h3 columns on mobile */
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(1),
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(1) + p,
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(2),
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(2) + p,
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(3),
+  .glass-content > h2:first-of-type ~ h3:nth-of-type(3) + p {
+    grid-column: 1;
   }
   
   .glass-content h2 {
