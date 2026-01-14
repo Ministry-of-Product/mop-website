@@ -60,13 +60,13 @@ No long-term commitments. No vendor pitches. Just clarity about what to do next.
 <div id="contactModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <iframe 
+    <iframe
       id="googleFormIframe"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true" 
-      width="640" 
-      height="836" 
-      frameborder="0" 
-      marginheight="0" 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true"
+      width="640"
+      height="836"
+      frameborder="0"
+      marginheight="0"
       marginwidth="0"
       allow="fullscreen"
       loading="lazy"
@@ -82,19 +82,19 @@ No long-term commitments. No vendor pitches. Just clarity about what to do next.
 (function() {
   const originalError = console.error;
   const originalWarn = console.warn;
-  
+
   console.error = function(...args) {
     const message = args.join(' ');
-    if (message.includes('docs.google.com') && 
-        (message.includes('fonts') || 
-         message.includes('woff2') || 
+    if (message.includes('docs.google.com') &&
+        (message.includes('fonts') ||
+         message.includes('woff2') ||
          message.includes('ERR_FILE_NOT_FOUND') ||
          message.includes('filesystem:'))) {
       return;
     }
     originalError.apply(console, args);
   };
-  
+
   window.addEventListener('unhandledrejection', function(e) {
     const reason = e.reason ? String(e.reason) : '';
     if (reason.includes('docs.google.com') && reason.includes('fonts')) {
@@ -128,84 +128,3 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-
----
-
-## Contact
-
-<div id="contact"></div>
-<button id="contactBtn" class="cta-button">Start a Conversation</button>
-
-<!-- Contact Modal -->
-<div id="contactModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe 
-      id="googleFormIframe"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true" 
-      width="640" 
-      height="836" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0"
-      allow="fullscreen"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Contact the Ministry of Product">
-      Loading…
-    </iframe>
-  </div>
-</div>
-
-<script>
-// Suppress harmless Google Forms font loading errors
-(function() {
-  const originalError = console.error;
-  const originalWarn = console.warn;
-  
-  console.error = function(...args) {
-    const message = args.join(' ');
-    if (message.includes('docs.google.com') && 
-        (message.includes('fonts') || 
-         message.includes('woff2') || 
-         message.includes('ERR_FILE_NOT_FOUND') ||
-         message.includes('filesystem:'))) {
-      return;
-    }
-    originalError.apply(console, args);
-  };
-  
-  window.addEventListener('unhandledrejection', function(e) {
-    const reason = e.reason ? String(e.reason) : '';
-    if (reason.includes('docs.google.com') && reason.includes('fonts')) {
-      e.preventDefault();
-    }
-  });
-})();
-
-// Modal functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('contactModal');
-  const btn = document.getElementById('contactBtn');
-  const span = document.getElementsByClassName('close')[0];
-
-  if (btn) {
-    btn.onclick = function() {
-      modal.style.display = 'block';
-    }
-  }
-
-  if (span) {
-    span.onclick = function() {
-      modal.style.display = 'none';
-    }
-  }
-
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  }
-});
-</script>
-
