@@ -1,36 +1,42 @@
 ---
 layout: default
-title: Decision Clarity for AI Builders
-description: Help making better next-step decisions when you've built something but aren't sure what to do next.
-meta_description: Decision clarity for AI builders. Most products fail from bad sequencing, not bad ideas. Get help making better next-step decisions.
+title: Ministry of Product
+description: Help experienced operators turn existing business leverage into AI-enabled systems — without scaling the wrong thing first.
+meta_description: Ministry of Product helps experienced operators scale their business with AI-enabled systems. The biggest risk is bad sequencing, not technical failure.
 ---
 
-# Decision Clarity for AI Builders
+# Ministry of Product
 
-Most AI products don't fail because the tech is bad. They fail because the sequence of decisions is wrong.
+**Help experienced operators turn existing business leverage into AI-enabled systems — without scaling the wrong thing first.**
 
-If you've built something and now you're stuck—unsure what matters next, what to ignore, or where effort will actually compound—this site is for you.
+You have revenue, clients, and authority. You're trying to scale strategy, insight, or operations with AI. The risk isn't that the technology will fail. The risk is scaling the wrong abstraction first.
 
 ## The Problem
 
-You built it. It works. But now what?
+You're overwhelmed by possibilities, not blocked by capability.
 
-The gap between "working prototype" and "clear next step" is where most builders stall. You can add features, polish the UI, or build more demos. But without judgment about what actually matters, you'll waste months on the wrong thing.
+Every AI tool promises to transform your business. But which systems should you build first? Which experiments are worth the effort? What should you say no to?
+
+Most businesses waste months building AI systems that don't compound. They scale noise instead of judgment. They commit to experiments as if they were permanent infrastructure.
 
 ## The Approach
 
-This site helps through real examples, opinionated analysis, and direct guidance. Not theory. Not hype. Just clarity about what to do next.
+This site helps through decision leadership with implementation credibility. Not theory. Not vendor pitches. Just clarity about what to build, in what order, and what to ignore.
 
 ## Where to Start
 
-### [Always Be Launching](/always-be-launching)
+### [Situations I Help With](/situations)
 
-Real examples of builders who got stuck, the decisions that mattered, and what should happen next.
+Decision scenarios where sequencing matters most.
 
-### [Advisory & Guidance](/advisory)
+### [How I Work](/how-i-work)
 
-Direct help when you need judgment on your specific situation.
+Approach, boundaries, and what to expect.
 
-### [About](/about)
+### [Case Studies](/case-studies)
 
-Why judgment matters and how I think about these problems.
+Real examples of judgment through decisions.
+
+### [Working Together](/advisory)
+
+Convert fit into conversations while filtering aggressively.
