@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<article class="abl-post">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </header>
+
+  <div class="abl-content">
+    {% if page.what_they_built %}
+    <section class="abl-section">
+      <h2>What They Built</h2>
+      <p>{{ page.what_they_built }}</p>
+    </section>
+    {% endif %}
+
+    {% if page.original_assumption %}
+    <section class="abl-section">
+      <h2>The Original Assumption</h2>
+      <p>{{ page.original_assumption }}</p>
+    </section>
+    {% endif %}
+
+    {% if page.where_they_got_stuck %}
+    <section class="abl-section">
+      <h2>Where They Got Stuck</h2>
+      <p>{{ page.where_they_got_stuck }}</p>
+    </section>
+    {% endif %}
+
+    {% if page.decision_that_mattered %}
+    <section class="abl-section">
+      <h2>The Decision That Mattered</h2>
+      <p>{{ page.decision_that_mattered }}</p>
+    </section>
+    {% endif %}
+
+    {% if page.what_should_happen_next %}
+    <section class="abl-section">
+      <h2>What Should Happen Next</h2>
+      <p>{{ page.what_should_happen_next }}</p>
+    </section>
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.patterns %}
+    <section class="abl-section abl-patterns">
+      <h2>Pattern Tags</h2>
+      <ul class="pattern-tags">
+        {% for pattern in page.patterns %}
+        <li>{{ pattern }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </div>
+
+  <footer class="abl-footer">
+    <p><a href="/always-be-launching/">← Back to Always Be Launching</a></p>
+  </footer>
+</article>
+

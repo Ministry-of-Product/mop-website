@@ -1,24 +1,36 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+title: Decision Clarity for AI Builders
+description: Help making better next-step decisions when you've built something but aren't sure what to do next.
+meta_description: Decision clarity for AI builders. Most products fail from bad sequencing, not bad ideas. Get help making better next-step decisions.
 ---
 
-# The Ministry of Product
+# Decision Clarity for AI Builders
 
-We build prototypes, manage products, and incubate businesses.
+Most AI products don't fail because the tech is bad. They fail because the sequence of decisions is wrong.
 
-## What we can do for you.
+If you've built something and now you're stuck—unsure what matters next, what to ignore, or where effort will actually compound—this site is for you.
 
-### We design software and build proofs of concepts.
+## The Problem
 
-Typically we will start with using Figma to help you think through your design.  Once we have agreed on the scope of the work we can rapidly create versions to let you see what it will feel like for your end customers.  Budget about 1 month for this design and discovery and about 1-3 months to build the "proof of concept" version.
+You built it. It works. But now what?
 
-### We do product coaching
+The gap between "working prototype" and "clear next step" is where most builders stall. You can add features, polish the UI, or build more demos. But without judgment about what actually matters, you'll waste months on the wrong thing.
 
-Building a product requires you to think about the design, technology, and business all at the same time. We can help guide you through the process to give you a better thought out product. This might take only a couple hours a month. With regular meetings we can help you build your product in the most efficient an effective ways.
+## The Approach
 
-### We can build MVPs
+This site helps through real examples, opinionated analysis, and direct guidance. Not theory. Not hype. Just clarity about what to do next.
 
-MVPs (minimum viable product) can have many different meanings depending on the industry, target market, and marketing approach. We will work with you to define what success means and then create a checklist of user stories to define when the MVP is ready. Based on this criteria we can give you an estimate of how long and how much your MVP could cost.
+## Where to Start
+
+### [Always Be Launching](/always-be-launching)
+
+Real examples of builders who got stuck, the decisions that mattered, and what should happen next.
+
+### [Advisory & Guidance](/advisory)
+
+Direct help when you need judgment on your specific situation.
+
+### [About](/about)
+
+Why judgment matters and how I think about these problems.
