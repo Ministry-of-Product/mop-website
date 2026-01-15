@@ -8,7 +8,7 @@ meta_description: Case studies demonstrating judgment through decisions. Real ex
 
 # Case Studies
 
-Real examples of judgment through decisions. These aren't success stories—they're situations where sequencing made the difference.
+Examples of building alongside clients using AI as a thinking partner—moving from idea to product through rapid, grounded iteration.
 
 
 ## Recent Case Studies
