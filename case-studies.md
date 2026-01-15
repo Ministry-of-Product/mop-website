@@ -10,32 +10,21 @@ meta_description: Case studies demonstrating judgment through decisions. Real ex
 
 Real examples of judgment through decisions. These aren't success stories—they're situations where sequencing made the difference.
 
-## Structure
-
-Each case study focuses on:
-- **The Situation** — What the business was trying to scale
-- **The Decision** — What actually mattered
-- **The Sequence** — What order things happened in
-- **The Outcome** — What happened, and what should have happened
-
-The goal is to demonstrate judgment, not just results.
 
 ## Recent Case Studies
 
+<div class="case-studies-grid">
 {% assign case_studies = site.posts | where_exp: "post", "post.categories contains 'case-studies'" | sort: "date" | reverse %}
-{% for post in case_studies limit: 10 %}
-### [{{ post.title }}]({{ post.url }})
-
-{% if post.excerpt %}{{ post.excerpt | strip_html }}{% endif %}
-
-{% if post.categories %}{% assign cats = post.categories | join: ", " %}{% endif %}
-**Categories:** {% if cats %}{{ cats }}{% else %}—{% endif %}
-
-[Read more →]({{ post.url }})
-
----
-
+{% for post in case_studies %}
+  <div class="case-study-card">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {% if post.excerpt %}
+    <p class="case-study-excerpt">{{ post.excerpt | strip_html }}</p>
+    {% endif %}
+    <a href="{{ post.url }}" class="case-study-link">Read more →</a>
+  </div>
 {% endfor %}
+</div>
 
 {% if case_studies.size == 0 %}
 *No case studies yet. Check back soon.*
