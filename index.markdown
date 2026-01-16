@@ -1,24 +1,39 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+title: Ministry of Product
+description: Exploring practical ways AI can support your business—one small step at a time.
+meta_description: Practical, low-pressure ways to explore how AI can support your business—one small step at a time.
 ---
 
-# The Ministry of Product
+# Ministry of Product
 
-We build prototypes, manage products, and incubate businesses.
+**Using Product Development at highspeeds to increase your revenue and decrease your operating costs.**
 
-## What we can do for you.
+You’ve spent a lifetime building a solid business.
+It works, people rely on it, and you care about how it grows.
+You’ve probably also wondered what AI tools could do to lighten the load or open new possibilities—while feeling unsure where to start or what’s actually worth the effort.
 
-### We design software and build proofs of concepts.
+That’s where I can help.
+We start with a conversation, try something small, and see what we learn together.
 
-Typically we will start with using Figma to help you think through your design.  Once we have agreed on the scope of the work we can rapidly create versions to let you see what it will feel like for your end customers.  Budget about 1 month for this design and discovery and about 1-3 months to build the "proof of concept" version.
+## What working together feels like
 
-### We do product coaching
+- It’s thoughtful, low-pressure, and grounded in reality.
+- We talk through how your business runs today.
+- We pick one idea to explore.
+- Within about a week, there’s something tangible to react to.
 
-Building a product requires you to think about the design, technology, and business all at the same time. We can help guide you through the process to give you a better thought out product. This might take only a couple hours a month. With regular meetings we can help you build your product in the most efficient an effective ways.
+Sometimes that clarity leads to building something.
+Sometimes it simply moves the conversation forward.
 
-### We can build MVPs
 
-MVPs (minimum viable product) can have many different meanings depending on the industry, target market, and marketing approach. We will work with you to define what success means and then create a checklist of user stories to define when the MVP is ready. Based on this criteria we can give you an estimate of how long and how much your MVP could cost.
+## What we should look for 
+- easing repetitive or draining work
+- seasonal tasks that always need extra management
+- ideas for how to expand your current products and marketshare
+
+
+## If this sounds useful
+
+If you’re curious about exploring AI in a way that feels human, practical, and respectful of your business, I’d be happy to talk.
+We can start small and see where it leads.

@@ -21,7 +21,7 @@
 title: Ministry of Product
 email: info-at-ministryofproduct.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to the Ministry of Product. We are a product consulting firm that can help you get a product launched and find product market fit.
+  Help experienced operators turn existing business leverage into AI-enabled systems — without scaling the wrong thing first.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ministryofprod
