@@ -8,46 +8,44 @@ meta_description: Work with Ministry of Product to scale your business with AI-e
 
 # Working Together
 
-Convert fit into conversations while filtering aggressively.
+## How I can help
 
-## Who This Is For
+I support business owners by helping ideas move from vague curiosity to something you can actually react to.
+This work is collaborative, flexible, and shaped by how your business really operates.
 
-- **Businesses with existing revenue, clients, and authority**
-- Founders or operators trying to scale strategy, insight, or operations with AI
-- Teams overwhelmed by possibilities rather than blocked by capability
-- People ready to make decisions, not just explore possibilities
+## Thinking together
 
-## Who This Is Not For
+We spend time understanding:
+- where work feels heavier than it should
+- which parts of the business absorb too much attention
+- what tends to break down when things get busy or change
 
-- Idea-only founders without revenue or clients
-- People afraid of ideas being "stolen"
-- Vendor shoppers or tire-kickers
-- Teams without budget or decision-making authority
-- People looking for free work, demos, or speculative effort
+These conversations are often clarifying on their own.
 
-If you're in the second group, this isn't the right fit. That's intentional.
+## Trying small experiments
 
-## What We'll Do
+From there, we choose one small thing to explore.
+That might look like:
+- me building a rough version of an idea so you can see it
+- you experimenting with an AI tool and sharing what stood out
+- using a simple app generator as a shared sketchpad
 
-We start with a conversation about your situation, what you've tried, and where you're stuck. From there, we identify:
+The goal is to make ideas visible quickly, so we can learn from them.
 
-1. **The decision that matters** — What actually needs to be decided right now?
-2. **The experiment** — What's the smallest thing we can build to test this?
-3. **Success criteria** — How will we know if this is working?
-4. **Next steps** — What happens after this experiment?
+## Handling the “doing”
 
-No long-term commitments. No vendor pitches. Just clarity about what to do next.
+Early on, I often take care of the setup, building, or experimentation so you don’t have to pause your business to learn new tools.
+If you later want to bring that work inside your team, we plan a thoughtful handoff that keeps everything understandable and usable.
 
-## What to Expect
+## Staying flexible
 
-- **Decision leadership** — Help identifying what to build, in what order
-- **Implementation credibility** — Actually building experiments, not just frameworks
-- **Clear boundaries** — We'll say no to things that don't make sense
-- **Experiments over commitments** — Early systems are tests, not permanent infrastructure
+Some people come for a single experiment.
+Others enjoy an ongoing rhythm of conversations and small iterations.
+There’s no fixed path. We let usefulness guide the work.
 
-## Get Started
+## If this sounds useful
 
-[Contact me](/advisory#contact) to discuss your situation. We'll determine if there's a fit and how to proceed.
+[Contact me](/advisory#contact) to discuss your situation.
 
 ---
 

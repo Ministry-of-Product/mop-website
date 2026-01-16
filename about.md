@@ -8,58 +8,67 @@ meta_description: How Ministry of Product works with experienced operators to sc
 
 # About
 
-Hi I'm Matt the principal consultant for Ministry of Product,
+Hi, I’m Matt.
+I run Ministry of Product.
+I’ve spent the last couple of decades working alongside business owners and leadership teams, helping turn ideas into things that actually exist—products, systems, processes, and ways of working that hold up under real conditions.
+Ministry of Product has been around for over ten years. Over that time, I’ve seen a wide range of situations: growing teams, limited budgets, shifting priorities, messy data, strong opinions, quiet doubts, and decisions that matter more than they first appear.
+Some of that work has been visible. Much of it hasn’t. What stays with me isn’t the output—it’s the pattern recognition that comes from long exposure to how businesses really operate.
 
-I’ve spent more than two decades building products, systems, and teams. Some of that work has been public. Much of the most valuable work hasn’t been. What matters is the pattern recognition that comes from long exposure to real constraints: budgets, people, incentives, messy data, shifting markets, and decisions that can’t be undone.
+## How I think about this work
 
-I work with business owners and senior leaders who don’t need hype — they need experience.
+Most challenges around growth, technology, or AI aren’t actually technical.
+They’re about timing, focus, and judgment.
+Good tools used at the wrong moment tend to create friction.
+Simple experiments, tried at the right time, tend to create clarity.
 
-## Why Judgment Matters
+Over the years, I’ve noticed that progress usually accelerates when owners get clear about:
+- what decision actually matters right now
+- what can wait
+- and what can safely be ignored for the moment
 
-The biggest risk in scaling with AI isn’t technical failure.
+That clarity often does more for a business than any single system or platform.
 
-It’s bad sequencing.
+## What I tend to help with
 
-Most companies don’t fail because they chose the wrong tools. They fail because they built the *wrong thing first*. They lock in assumptions too early. They scale noise instead of signal. They confuse experimentation with commitment.
+My role usually sits somewhere between thinking and doing.
+I help business owners:
+- sort through ideas without rushing to commit
+- explore AI and software in grounded, practical ways
+- try small experiments that reveal what’s useful
+- notice where effort isn’t paying off
+- make calmer decisions about what to build, change, or let go
 
-After years of building and advising across product, data, and systems, the pattern is consistent: progress accelerates when leaders get clear about **which decision actually matters right now** — and deliberately ignore the rest.
+Sometimes I build things.
+Sometimes I sketch, test, or prototype.
+Often, the most valuable work is simply creating the conditions for a better decision.
 
-That clarity compounds faster than any model or platform.
+## How I like to work
 
-## What I Do
+I care about long-term ease, not short-term activity.
+In practice, that usually means:
+- moving carefully before moving quickly
+- trying things before formalizing them
+- keeping experiments small and understandable
+- letting learning guide direction
+- using technology to support thinking, not replace it
 
-I help through **decision leadership with implementation credibility**.
+I work closely with decision-makers and owners, as a thinking partner who can also help make things real.
 
-That means I don’t advise from theory. I’ve built enough systems to know where plans break, where teams stall, and where second-order effects show up later.
+## A few boundaries that keep the work healthy
 
-Practically, this looks like:
+This work goes best when:
+- there’s real ownership and responsibility
+- decisions matter to someone
+- learning is valued more than appearances
+- progress is measured in usefulness, not volume
 
-- Helping identify which systems or capabilities are worth building first
-- Pressure-testing AI ideas before they become expensive commitments
-- Designing small, disciplined experiments that surface truth quickly
-- Establishing clear success criteria so progress is measurable
-- Helping leaders recognize when to double down — and when to stop
+I’m most helpful when there’s room to think, try, reflect, and adjust.
 
-The goal isn’t more AI. The goal is **better decisions at scale**.
+## About you
 
-## How I Work
-
-I optimize for long-term leverage, not short-term motion.
-
-- **Clarity over speed** — Fast in the wrong direction is still wrong
-- **Experiments over infrastructure** — Early systems earn permanence
-- **Restraint over volume** — Saying no is often the highest ROI move
-- **Judgment over tools** — Technology should amplify thinking, not replace it
-
-I work closely with decision-makers as a thinking partner who can also build.
-
-
-### What I Do
-
-- Work with leaders who have real authority and real stakes
-- Help sequence AI and product decisions intelligently
-- Build or guide early implementations where learning speed matters
-- Bring outside perspective grounded in lived experience
-
-
-If you’re ready to scale, [let’s talk](/advisory).
+People I work well with usually:
+- run established businesses
+- carry real responsibility
+- feel the weight of decisions
+- prefer clarity over novelty
+- want fewer initiatives, not more
