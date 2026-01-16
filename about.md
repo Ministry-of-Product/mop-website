@@ -10,21 +10,20 @@ meta_description: How Ministry of Product works with experienced operators to sc
 
 Hi, I’m Matt.
 I run Ministry of Product.
-I’ve spent the last couple of decades working alongside business owners and leadership teams, helping turn ideas into things that actually exist—products, systems, processes, and ways of working that hold up under real conditions.
-Ministry of Product has been around for over ten years. Over that time, I’ve seen a wide range of situations: growing teams, limited budgets, shifting priorities, messy data, strong opinions, quiet doubts, and decisions that matter more than they first appear.
-Some of that work has been visible. Much of it hasn’t. What stays with me isn’t the output—it’s the pattern recognition that comes from long exposure to how businesses really operate.
+I love businesses and technology. I’ve spent my career creating products and working alongside business owners and leadership teams. 
+I created the Ministry of Product more than a decade ago to help business owners get an idea to market quickly. Over that time, I’ve seen a wide range of situations: growing teams, limited budgets, shifting priorities, messy data, strong opinions, quiet doubts, and decisions that matter more than they first appear.
+Some of that work has been visible. Much of it hasn’t. What stays with me is the personal stories and lessons that come from how businesses really operate.
 
 ## How I think about this work
 
 Most challenges around growth, technology, or AI aren’t actually technical.
-They’re about timing, focus, and judgment.
-Good tools used at the wrong moment tend to create friction.
-Simple experiments, tried at the right time, tend to create clarity.
+They’re about communication, focus, and judgment.
+I use product development to create clarity and to move the conversation forward.
 
-Over the years, I’ve noticed that progress usually accelerates when owners get clear about:
-- what decision actually matters right now
-- what can wait
-- and what can safely be ignored for the moment
+Over the years, I’ve noticed that progress accelerates when owners can visualize ideas which in turns moves the conversation toward these questions :
+- What decision actually matters right now?
+- What can wait?
+- What can safely be ignored for the moment?
 
 That clarity often does more for a business than any single system or platform.
 
