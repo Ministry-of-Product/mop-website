@@ -51,11 +51,8 @@ I optimize for long-term leverage, not short-term motion.
 - **Restraint over volume** — Saying no is often the highest ROI move
 - **Judgment over tools** — Technology should amplify thinking, not replace it
 
-I work closely with decision-makers, not as a vendor, but as a thinking partner who can also build.
+I work closely with decision-makers as a thinking partner who can also build.
 
-## Boundaries
-
-Clear boundaries make the work effective.
 
 ### What I Do
 
@@ -64,21 +61,5 @@ Clear boundaries make the work effective.
 - Build or guide early implementations where learning speed matters
 - Bring outside perspective grounded in lived experience
 
-### What I Don’t Do
-
-- Sell tools, platforms, or pre-packaged solutions
-- Build production systems without success criteria
-- Take on speculative projects with no owner or budget
-- Compete on price, speed, or volume
-- Do free consulting disguised as discovery
-
-## About You
-
-- You already have revenue and responsibility
-- You’re past curiosity and ready to decide
-- You value clarity more than novelty
-- You want fewer initiatives, not more
-
-If that describes you, we’ll work well together.
 
 If you’re ready to scale, [let’s talk](/advisory).
