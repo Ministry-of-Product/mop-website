@@ -3,19 +3,34 @@
 
 @import "minima";
 
-/* Simple, clean typography with Seattle fog atmosphere */
+/* Simple, clean typography with parallax background */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(180deg,
-    #e8ecef 0%,      /* Soft white-gray */
-    #f5f7f9 50%,     /* Very light fog */
-    #ffffff 100%     /* Clean white at bottom */
-  );
+  background-image: url('/assets/images/OneRoomWorking.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   min-height: 100vh;
+}
+
+/* Background blur overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Site Header Navigation */
@@ -328,6 +343,10 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .site-header {
     padding: 0.75rem 1rem;
   }
@@ -385,6 +404,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .site-nav {
     flex-direction: column;
     gap: 0.5rem;
