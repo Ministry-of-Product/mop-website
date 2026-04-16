@@ -1,51 +1,36 @@
 ---
 layout: default
 title: Working Together
-description: Convert fit into conversations while filtering aggressively. For experienced operators with revenue, clients, and authority.
+description: I partner with founders and executives to build software products—from first conversation to live product.
 permalink: /advisory/
-meta_description: Work with Ministry of Product to scale your business with AI-enabled systems. For experienced operators with revenue, clients, and authority.
+meta_description: Work with Ministry of Product — embedded product partner for founders and executives building software.
 ---
 
 # Working Together
 
 ## How I can help
 
-I support business owners by helping ideas move from vague curiosity to something you can actually react to.
-This work is collaborative, flexible, and shaped by how your business really operates.
+I work with founders and executives at three levels, depending on where you are and what you need.
 
-## Thinking together
+**Build** — You have an idea and want it to become real software. I embed as a product partner: shaping the concept, making technical decisions, and driving execution. You stay focused on the business; I make sure the right thing gets built and shipped. This is the fastest path from vision to something in market.
 
-We spend time understanding:
-- where work feels heavier than it should
-- which parts of the business absorb too much attention
-- what tends to break down when things get busy or change
+**Advise** — You already have a team building. I come in as a fractional CPO or product lead: setting direction with OKRs, making roadmap decisions, and keeping execution connected to strategy. Useful when the engineering is there but product leadership isn’t.
 
-These conversations are often clarifying on their own.
+**Accelerate** — You want to move faster and spend less building what you already know needs to exist. I bring AI-native development practices into your process — not as a novelty, but as genuine leverage on the time and cost of building, testing, and iterating.
 
-## Trying small experiments
+## How an engagement starts
 
-From there, we choose one small thing to explore.
-That might look like:
-- me building a rough version of an idea so you can see it
-- you experimenting with an AI tool and sharing what stood out
-- using a simple app generator as a shared sketchpad
+Most engagements begin with a conversation about what you’re trying to build and why. From there, the shape of the work becomes clear quickly — sometimes it’s a short sprint to validate an idea, sometimes it’s an ongoing partnership.
 
-The goal is to make ideas visible quickly, so we can learn from them.
+I don’t take on many projects at once. When I’m in, I’m genuinely in.
 
-## Handling the “doing”
+## Who this works best for
 
-Early on, I often take care of the setup, building, or experimentation so you don’t have to pause your business to learn new tools.
-If you later want to bring that work inside your team, we plan a thoughtful handoff that keeps everything understandable and usable.
+Founders and executives with a real idea and real stakes. People who value judgment over activity, and who want a partner who can both think through the hard questions and make things real. Engagements work best when there’s clear ownership, honest feedback, and space to learn from what gets built.
 
-## Staying flexible
+## If this sounds like the right fit
 
-Some people come for a single experiment.
-Others enjoy an ongoing rhythm of conversations and small iterations.
-There’s no fixed path. We let usefulness guide the work.
-
-## If this sounds useful
-
-[Contact me](/advisory#contact) to discuss your situation.
+[Contact me](/advisory#contact) and tell me what you’re working on.
 
 ---
 
