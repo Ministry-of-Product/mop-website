@@ -6,6 +6,12 @@ categories: case-studies
 excerpt: Event networking defaults to whoever is standing near you. FortunateMatch replaces that with intent-based AI matching—attendees declare what they need, and the system surfaces the most valuable introductions in real time.
 ---
 
+<div style="margin-bottom: 2rem; background: #0f1729; padding: 16px; border-radius: 8px; display: inline-block;">
+  <a href="https://fortunatematch.com" target="_blank">
+    <img src="https://www.fortunatematch.com/assets/mop-logo.png" alt="FortunateMatch" style="height: 40px; width: auto;">
+  </a>
+</div>
+
 # FortunateMatch: AI-Powered Networking That Works
 
 **[fortunatematch.com](https://fortunatematch.com)**
