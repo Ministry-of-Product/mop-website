@@ -440,6 +440,27 @@ body::before {
   }
 }
 
+/* Case study top accent bar — extends edge-to-edge of .glass-content */
+.case-study-bar {
+  height: 20px;
+  border-radius: 12px 12px 0 0;
+  margin: -3rem -3rem 2.5rem -3rem;
+}
+
+@media (max-width: 768px) {
+  .case-study-bar {
+    margin: -2rem -1.5rem 2rem -1.5rem;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-study-bar {
+    margin: -1.5rem -1rem 2rem -1rem;
+    border-radius: 6px 6px 0 0;
+  }
+}
+
 /* Case Studies Grid */
 .case-studies-grid {
   display: grid;

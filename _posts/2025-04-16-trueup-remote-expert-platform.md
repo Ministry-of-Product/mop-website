@@ -6,11 +6,7 @@ categories: case-studies
 excerpt: Skilled tradespeople give away expertise for free on the phone every day. TrueUp changes that—a video platform with AI summaries, annotations, and payments built for people whose value comes from knowing how to do things.
 ---
 
-<div style="margin-bottom: 2rem;">
-  <a href="https://trueup.pro" target="_blank">
-    <img src="https://trueup.pro/assets/images/logo.png" alt="TrueUp" style="height: 60px; width: auto;">
-  </a>
-</div>
+<div class="case-study-bar" style="background: linear-gradient(90deg, #1E6FA3 0%, #2D8BCB 50%, #F47920 100%);"></div>
 
 # TrueUp: Turning Expert Knowledge Into a Paid Product
 
