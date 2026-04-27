@@ -1,22 +1,42 @@
 ---
 layout: default
 title: Ministry of Product
-description: I partner with founders and executives to turn their vision into working software—using AI-native development to move faster than traditional teams.
-meta_description: Ministry of Product — Product partner for founders and executives building software in Seattle.
+description: A Studio that builds AI-enabled products, and an Innovation Commons where the craft is practiced.
+meta_description: Ministry of Product — Studio consulting and Innovation Commons for builders, founders, and operators in Seattle.
 ---
 
 # Ministry of Product
 
-**I partner with founders and executives to turn their vision into working software.**
+**A Studio that builds products. A Practice where builders get better.**
 
-My role is to help shape the ideas, assemble the right capabilities, and drive efficient execution. I use Lean, Agile, OKRs, and AI-native development to connect an organization’s vision to the products it creates—faster and more deliberately than a traditional team could on their own.
+Most product work fails not because the technology is bad — but because decisions happen in the wrong order. We help operators and founders sequence correctly, and we practice that craft ourselves.
 
+Ministry of Product operates in two ways:
+
+- **The Studio** works with external teams to build real, AI-enabled products.
+- **The Innovation Commons** is an invite-only practice where builders explore ideas before they become companies.
 
 ---
 
-## Recent Products
+## The Studio
 
-These are the recent products I’ve taken from concept to launch:
+We partner with founders and executives to turn vision into working software — using AI-native development to move faster than a traditional team could on their own.
+
+The Studio applies the same judgment developed through the Practice: what matters now, what can wait, and where effort will compound versus stall.
+
+**Build** — Embed as a product partner on new software ideas, from concept to live product. Product strategy, architecture decisions, and execution — so founders stay focused on the business.
+
+**Advise** — For teams with existing engineers, fractional CPO or product lead: setting direction with OKRs, shaping roadmap, keeping the team building the right things in the right order.
+
+**Accelerate** — Integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating. Not more AI — better leverage.
+
+[Work with the Studio →](/studio)
+
+---
+
+## Reference Products
+
+Three recent products taken from concept to launch through the Studio:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
 
@@ -48,14 +68,19 @@ These are the recent products I’ve taken from concept to launch:
 
 ---
 
-## How I work
+## The Innovation Commons
 
-**Build** — I embed as a product partner on new software ideas, from concept to live product. I lead product strategy, architecture decisions, and execution — so founders stay focused on the business while the software gets built.
+The Practice is an Innovation Commons — a shared environment where ideas are explored before they become companies.
 
-**Advise** — For teams with existing engineers, I work as a fractional CPO or product lead: setting direction with OKRs, shaping roadmap, and keeping the team building the right things in the right order.
+It is not a program, a network, or an incubator. It is a place to:
+- work on ideas
+- improve the craft of building
+- develop judgment through repeated cycles of building and feedback
 
-**Accelerate** — I integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating. The goal isn’t more AI — it’s better leverage.
+Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
+
+[Learn about the Commons →](/innovation-commons)
 
 ---
 
-[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with me →](/advisory)
+[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with the Studio →](/studio) &nbsp;·&nbsp; [About →](/about)
