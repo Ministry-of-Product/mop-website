@@ -1,142 +1,222 @@
-# The Ministry of Product — Innovation Commons Charter
+# The Ministry of Product — Innovation Commons Charter (v2)
 
 ## 1. Purpose
 
 The Ministry of Product is an Innovation Commons.
 
-It exists as a place to explore ideas before they become companies, and to improve the craft of building products through practice.
+It exists to practice the craft of turning ideas into real, profitable businesses.
 
-The goal is not to produce companies on demand.  
-The goal is to create the conditions where the right ones can emerge.
+This is done through shared work, direct feedback, and repeated cycles of building, testing, and refining.
 
----
-
-## 2. What This Is
-
-- A place to work on ideas without immediate pressure to formalize them  
-- A group of people improving how they think, build, and collaborate  
-- An environment where teams form naturally around shared interest and momentum  
-- A bridge between early exploration and eventual execution  
+Some ideas become companies.  
+The primary goal is to get better at the work.
 
 ---
 
-## 3. What This Is Not
+## 2. Structure
 
-- Not an incubator or accelerator  
-- Not a networking group  
-- Not a place for passive participation  
-- Not a system for assigning or guaranteeing ownership  
+The Ministry of Product has two parts:
+
+### The Commons
+A small, invite-only group focused on practice.
+
+This is where ideas are explored, skills are developed, and projects take shape.
+
+### External Work
+A consultancy that helps teams clarify ideas and move toward real products.
+
+The thinking is consistent across both.  
+The environments are different.
+
+The Commons is for practice.  
+Client work is for application.
+
+---
+
+## 3. The Commons
+
+The Commons operates more like a dojo than a community.
+
+Participation is active.  
+People bring ideas, contribute to others, and improve through doing.
+
+There are no predefined roles, ownership stakes, or expectations of outcomes at the start.
+
+Structure emerges later, when something proves real.
 
 ---
 
 ## 4. Core Principles
 
-### Exploration Before Structure
-Ideas are explored before roles, ownership, or companies are defined.
+### Practice Over Discussion
+Work is the focus. Ideas are tested through building, not debated in the abstract.
 
-### Contribution Over Entitlement
-Nothing is assumed. Roles, influence, and eventual ownership come from contribution and alignment over time.
+### Contribution Determines Influence
+Participation, effort, and results determine who shapes a project over time.
 
-### Practice Over Performance
-The focus is on doing the work—testing, building, refining—not presenting or posturing.
+### Structure Comes Later
+Roles, ownership, and companies form after there is signal—not before.
 
-### Direct, Useful Feedback
-Feedback is honest and intended to improve outcomes. Avoiding discomfort is not the goal.
+### Direct Feedback
+Work is challenged openly. Feedback is intended to improve outcomes.
 
-### Small, High-Trust Environment
-The group remains intentionally small and selective to preserve quality of interaction.
-
-### Growth of People and Ideas
-Improving judgment, taste, and capability is as important as any specific outcome.
+### Small and High-Trust
+The Commons remains intentionally small to maintain quality of interaction.
 
 ---
 
 ## 5. How Work Happens
 
-- Ideas are introduced and discussed openly  
-- People choose what to engage with based on interest and conviction  
-- Work progresses through collaboration, not assignment  
-- Some ideas gain traction and evolve; others are explored and set aside  
-- Structure (teams, roles, ownership) only emerges when there is real signal  
+- People bring ideas or join ideas they care about  
+- Work progresses through voluntary collaboration  
+- Projects move forward based on momentum and contribution  
+- Many ideas are explored; few are pursued deeply  
+
+There is no assignment of work.  
+Engagement is driven by interest and conviction.
 
 ---
 
-## 6. Transition to Company
+## 6. Practice Rhythm
 
-When an idea demonstrates real potential:
+The Commons operates with a regular cadence.
+
+### Monthly Show & Tell
+
+Each participant may:
+- Present for 3 minutes  
+  - What they built  
+  - What they learned  
+  - What they plan to do next  
+- Receive 5 minutes of direct critique  
+
+This is the primary feedback loop.
+
+The goal is clarity, accountability, and continuous improvement.
+
+---
+
+## 7. Ownership and Contribution
+
+Ownership is not assigned upfront.
+
+Instead, it is earned through contribution using the Big Slice / Small Slice (BSSS) framework.
+
+- Each project is divided into milestone-based “Big Slices”  
+- Contributors earn “Small Slices” based on effort and impact within each phase  
+- Ownership is calculated proportionally based on contributions  
+- Ownership is locked as milestones are completed  
+
+This system:
+- tracks real contribution  
+- avoids premature equity decisions  
+- aligns incentives over time  
+
+Ownership becomes formal only when a project transitions into a company.
+
+---
+
+## 8. Product Progression
+
+Projects move through stages using the Product Pathway model.
+
+This includes progression from:
+- idea → prototype → users → revenue → scalable system  
+
+At each stage, the focus shifts:
+- early → understanding the problem and usefulness  
+- later → reliability, scale, and sustainability  
+
+The goal is to move toward products that are:
+- used  
+- generating revenue  
+- stable enough to operate independently  
+
+---
+
+## 9. Transition to Company
+
+When a project shows real signal:
 
 - A smaller, committed team forms  
-- Expectations become explicit  
-- Ownership and structure are defined at that point—not before  
+- Expectations and roles become explicit  
+- Ownership can be formalized into equity  
 
-The Commons supports this transition but does not force it.
+This happens at the last responsible moment.
+
+The Commons supports the transition but does not force it.
 
 ---
 
-## 7. Code of Conduct
+## 10. Code of Conduct
 
 Participants are expected to:
 
-- Contribute meaningfully through work, thinking, or feedback  
-- Share ideas and progress openly within the group  
-- Challenge ideas directly while respecting people  
-- Avoid dominating, extracting, or disengaging  
-- Follow through on commitments when made  
+- Contribute through building, thinking, or feedback  
+- Share progress openly  
+- Engage with others’ work  
+- Give direct, useful critique  
+- Follow through on commitments  
 
-Membership is based on alignment with these behaviors.
+Participation is not passive.
+
+Membership is maintained through continued contribution.
 
 ---
 
-## 8. Messaging Guidelines
+## 11. Boundaries
+
+To protect the Commons:
+
+- It is invite-only  
+- Participation is active, not observational  
+- Membership may be limited or removed  
+- The group does not optimize for scale  
+
+The goal is quality, not growth.
+
+---
+
+## 12. Relationship to External Work
+
+The consultancy applies the same thinking in a more directed environment.
+
+- Client work is structured and outcome-oriented  
+- The Commons is exploratory and practice-oriented  
+
+The Commons is not a staffing pool.
+
+The two inform each other but remain separate.
+
+---
+
+## 13. Messaging Guidelines
+
+When describing the Ministry of Product:
 
 ### Do:
 - Speak plainly about how it works  
-- Emphasize exploration, practice, and contribution  
-- Be clear that structure comes later  
-- Let the model stand on its own without over-explaining  
+- Emphasize practice, contribution, and progression  
+- Be clear that structure and ownership come later  
 
 ### Avoid:
-- Overly persuasive or hype-driven language  
-- Framing that assumes what the reader believes  
-- Startup clichés (e.g., “disrupt,” “10x,” “move fast and break things”)  
-- Implying guaranteed outcomes (companies, funding, ownership)  
+- Hype or persuasion-driven language  
+- Overpromising outcomes  
+- Startup clichés or abstractions  
 
-Tone should be grounded, direct, and confident without needing to convince.
-
----
-
-## 9. Who This Is For
-
-People who tend to align:
-
-- Care about how products are actually built  
-- Are willing to work through ambiguity  
-- Value honest feedback  
-- Want to improve their ability to execute and collaborate  
+The tone should reflect how the work is actually done.
 
 ---
 
-## 10. Boundaries
+## Closing
 
-To protect the integrity of the Commons:
+The Ministry of Product is a place to practice.
 
-- Participation is active, not observational  
-- Membership can be limited or revoked  
-- The group does not optimize for scale  
-- The environment prioritizes trust over growth  
+The work is to:
+- explore ideas  
+- build real things  
+- improve over time  
 
----
+Some of that work becomes companies.
 
-## 11. Relationship to External Work
-
-The Ministry of Product also works with external teams.
-
-- External work applies the same thinking in a more directed context  
-- The Commons is not a resource pool for client work  
-- The two inform each other but remain distinct  
-
----
-
-## Final Note
-
-This document is meant to guide decisions, create consistency, and help define how the Commons operates. It should evolve as the Commons grows and becomes more real.
+Most of it becomes experience.
