@@ -1,136 +1,134 @@
-# The Ministry of Product — Innovation Commons Charter (v2)
+# The Ministry of Product — Charter
 
-## 1. Purpose
+## 1. What This Is
 
-The Ministry of Product is an Innovation Commons.
+The Ministry of Product operates as both a Studio and a Practice.
 
-It exists to practice the craft of turning ideas into real, profitable businesses.
+- The Studio works with teams to build real products.  
+- The Practice is a smaller, invite-only group focused on improving the craft through hands-on work.
 
-This is done through shared work, direct feedback, and repeated cycles of building, testing, and refining.
+Engagement happens in two ways:
+- Participation in the Practice (by invitation)  
+- Working with the Studio (as a client)
+
+The two are connected, but they serve different purposes.
+
+---
+
+## 2. Innovation Commons
+
+The Practice is an Innovation Commons.
+
+An Innovation Commons is a shared environment where:
+- ideas are explored before they become companies  
+- people contribute to work based on interest and conviction  
+- ownership is earned through contribution over time  
+- structure emerges only when something proves real  
+
+It is not a program, network, or incubator.
+
+It is a place to:
+- work on ideas  
+- improve the craft of building  
+- develop judgment through repeated cycles of building and feedback  
+
+The Commons is defined by participation, not membership.
+
+---
+
+## 3. Purpose
+
+The purpose of the Practice is to get better at turning ideas into real, profitable businesses.
+
+This happens through:
+- building  
+- feedback  
+- iteration  
 
 Some ideas become companies.  
-The primary goal is to get better at the work.
+The primary outcome is improved capability.
 
 ---
 
-## 2. Structure
+## 4. The Practice
 
-The Ministry of Product has two parts:
+The Practice is an ongoing environment.
 
-### The Commons
-A small, invite-only group focused on practice.
-
-This is where ideas are explored, skills are developed, and projects take shape.
-
-### External Work
-A consultancy that helps teams clarify ideas and move toward real products.
-
-The thinking is consistent across both.  
-The environments are different.
-
-The Commons is for practice.  
-Client work is for application.
-
----
-
-## 3. The Commons
-
-The Commons operates more like a dojo than a community.
+People:
+- bring ideas  
+- join projects  
+- contribute to the work  
 
 Participation is active.  
-People bring ideas, contribute to others, and improve through doing.
+There are no observers.
 
-There are no predefined roles, ownership stakes, or expectations of outcomes at the start.
-
-Structure emerges later, when something proves real.
-
----
-
-## 4. Core Principles
-
-### Practice Over Discussion
-Work is the focus. Ideas are tested through building, not debated in the abstract.
-
-### Contribution Determines Influence
-Participation, effort, and results determine who shapes a project over time.
-
-### Structure Comes Later
-Roles, ownership, and companies form after there is signal—not before.
-
-### Direct Feedback
-Work is challenged openly. Feedback is intended to improve outcomes.
-
-### Small and High-Trust
-The Commons remains intentionally small to maintain quality of interaction.
+There are no predefined roles or ownership at the start.  
+Structure forms later, when there is real signal.
 
 ---
 
 ## 5. How Work Happens
 
-- People bring ideas or join ideas they care about  
-- Work progresses through voluntary collaboration  
-- Projects move forward based on momentum and contribution  
-- Many ideas are explored; few are pursued deeply  
+- People bring their own ideas or join others  
+- Work is self-directed  
+- Projects move forward through contribution  
+- Most ideas are explored briefly; a few are pursued deeply  
 
 There is no assignment of work.  
-Engagement is driven by interest and conviction.
+Momentum determines what continues.
 
 ---
 
 ## 6. Practice Rhythm
 
-The Commons operates with a regular cadence.
+The Practice operates with a regular cadence.
 
-### Monthly Show & Tell
+### Monthly Session
 
 Each participant may:
 - Present for 3 minutes  
   - What they built  
   - What they learned  
-  - What they plan to do next  
+  - What they plan next  
 - Receive 5 minutes of direct critique  
 
 This is the primary feedback loop.
 
-The goal is clarity, accountability, and continuous improvement.
+The goal is:
+- clarity  
+- accountability  
+- improvement over time  
 
 ---
 
-## 7. Ownership and Contribution
+## 7. Ownership
 
 Ownership is not assigned upfront.
 
-Instead, it is earned through contribution using the Big Slice / Small Slice (BSSS) framework.
+It is earned through contribution using the Big Slice / Small Slice system.
 
-- Each project is divided into milestone-based “Big Slices”  
-- Contributors earn “Small Slices” based on effort and impact within each phase  
-- Ownership is calculated proportionally based on contributions  
+- Work is divided into milestone-based phases  
+- Contributors earn proportional ownership within each phase  
 - Ownership is locked as milestones are completed  
 
-This system:
-- tracks real contribution  
-- avoids premature equity decisions  
-- aligns incentives over time  
+This system tracks contribution but is not legal equity.
 
-Ownership becomes formal only when a project transitions into a company.
+Formal ownership is defined only when a project becomes a company.
 
 ---
 
 ## 8. Product Progression
 
-Projects move through stages using the Product Pathway model.
+Projects move through stages using the Product Pathway.
 
-This includes progression from:
-- idea → prototype → users → revenue → scalable system  
+Typical progression:
+- idea → prototype → users → revenue → stable system  
 
-At each stage, the focus shifts:
-- early → understanding the problem and usefulness  
-- later → reliability, scale, and sustainability  
+Focus shifts over time:
+- early → understanding and usefulness  
+- later → reliability, scale, sustainability  
 
-The goal is to move toward products that are:
-- used  
-- generating revenue  
-- stable enough to operate independently  
+Progress is measured by movement through these stages.
 
 ---
 
@@ -138,13 +136,13 @@ The goal is to move toward products that are:
 
 When a project shows real signal:
 
-- A smaller, committed team forms  
-- Expectations and roles become explicit  
-- Ownership can be formalized into equity  
+- A committed team forms  
+- Expectations become explicit  
+- Ownership can be formalized  
 
 This happens at the last responsible moment.
 
-The Commons supports the transition but does not force it.
+The Practice supports the transition but does not force it.
 
 ---
 
@@ -158,53 +156,49 @@ Participants are expected to:
 - Give direct, useful critique  
 - Follow through on commitments  
 
-Participation is not passive.
+Participation is required.
 
-Membership is maintained through continued contribution.
+Membership is maintained through contribution.
 
 ---
 
 ## 11. Boundaries
 
-To protect the Commons:
+To maintain quality:
 
-- It is invite-only  
-- Participation is active, not observational  
+- The Practice is invite-only  
+- Participation is active  
 - Membership may be limited or removed  
 - The group does not optimize for scale  
 
-The goal is quality, not growth.
+The goal is a high-trust environment for real work.
 
 ---
 
-## 12. Relationship to External Work
+## 12. The Studio
 
-The consultancy applies the same thinking in a more directed environment.
+The Studio works with external teams.
 
-- Client work is structured and outcome-oriented  
-- The Commons is exploratory and practice-oriented  
+- Work is structured  
+- Outcomes are defined  
+- Accountability is explicit  
 
-The Commons is not a staffing pool.
+The Studio applies the same thinking developed in the Practice.
 
-The two inform each other but remain separate.
+The Practice is not a staffing pool.
 
 ---
 
-## 13. Messaging Guidelines
+## 13. Messaging
 
 When describing the Ministry of Product:
 
-### Do:
 - Speak plainly about how it works  
 - Emphasize practice, contribution, and progression  
-- Be clear that structure and ownership come later  
+- Avoid hype or persuasion  
+- Do not imply guaranteed outcomes  
 
-### Avoid:
-- Hype or persuasion-driven language  
-- Overpromising outcomes  
-- Startup clichés or abstractions  
-
-The tone should reflect how the work is actually done.
+The tone should match the work.
 
 ---
 
