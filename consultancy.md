@@ -1,18 +1,18 @@
 ---
 layout: default
-title: The Studio
-description: Ministry of Product Studio — embedded product partner for founders and executives building AI-enabled software.
-permalink: /studio/
-meta_description: The Ministry of Product Studio works with external teams to build real, AI-enabled products. Embedded product leadership from concept to launch.
+title: Consultancy
+description: Ministry of Product Consultancy — embedded product partner for founders and executives building AI-enabled software.
+permalink: /consultancy/
+meta_description: The Ministry of Product Consultancy works with external teams to build real, AI-enabled products. Embedded product leadership from concept to launch.
 ---
 
-# The Studio
+# Consultancy
 
-The Studio works with external teams to build real products.
+The Consultancy works with external teams to build real products.
 
 Work is structured. Outcomes are defined. Accountability is explicit.
 
-The Studio applies the same thinking developed inside the Practice — judgment about what matters now, what can wait, and how to sequence decisions correctly.
+The Consultancy applies the same thinking developed inside the Practice — judgment about what matters now, what can wait, and how to sequence decisions correctly.
 
 ---
 
@@ -58,13 +58,13 @@ Founders and executives with a real idea and real stakes. People who value judgm
 
 Engagements work best when there's clear ownership, honest feedback, and space to learn from what gets built.
 
-The Studio is not a staffing pool for the Practice.
+The Consultancy is not a staffing pool for the Practice.
 
 ---
 
 ## Reference Products
 
-These are recent Studio products taken from concept to launch:
+These are recent Consultancy products taken from concept to launch:
 
 - **[TrueUp](https://trueup.pro)** — Remote expert guidance for skilled tradespeople. [Case study →](/case-studies/2025/04/16/trueup-remote-expert-platform)
 - **[SoundPoints](https://soundpoints.com)** — Location-based audio experiences for creators and explorers. [Case study →](/case-studies/2025/04/16/soundpoints-location-audio)

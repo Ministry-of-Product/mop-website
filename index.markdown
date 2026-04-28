@@ -1,28 +1,28 @@
 ---
 layout: default
 title: Ministry of Product
-description: A Studio that builds AI-enabled products, and an Innovation Commons where the craft is practiced.
-meta_description: Ministry of Product — Studio consulting and Innovation Commons for builders, founders, and operators in Seattle.
+description: A Consultancy that builds AI-enabled products, and an Innovation Commons where the craft is practiced.
+meta_description: Ministry of Product — Consultancy consulting and Innovation Commons for builders, founders, and operators in Seattle.
 ---
 
 # Ministry of Product
 
-**A Studio that builds products. A Practice where builders get better.**
+**A Consultancy that builds products. A Practice where builders get better.**
 
 Most product work fails not because the technology is bad — but because decisions happen in the wrong order. We help operators and founders sequence correctly, and we practice that craft ourselves.
 
 Ministry of Product operates in two ways:
 
-- **The Studio** works with external teams to build real, AI-enabled products.
+- **The Consultancy** works with external teams to build real, AI-enabled products.
 - **The Innovation Commons** is an invite-only practice where builders explore ideas before they become companies.
 
 ---
 
-## The Studio
+## The Consultancy
 
 We partner with founders and executives to turn vision into working software — using AI-native development to move faster than a traditional team could on their own.
 
-The Studio applies the same judgment developed through the Practice: what matters now, what can wait, and where effort will compound versus stall.
+The Consultancy applies the same judgment developed through the Practice: what matters now, what can wait, and where effort will compound versus stall.
 
 **Build** — Embed as a product partner on new software ideas, from concept to live product. Product strategy, architecture decisions, and execution — so founders stay focused on the business.
 
@@ -30,13 +30,13 @@ The Studio applies the same judgment developed through the Practice: what matter
 
 **Accelerate** — Integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating. Not more AI — better leverage.
 
-[Work with the Studio →](/studio)
+[Work with the Consultancy →](/consultancy)
 
 ---
 
 ## Reference Products
 
-Three recent products taken from concept to launch through the Studio:
+Three recent products taken from concept to launch through the Consultancy:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
 
@@ -83,4 +83,4 @@ Participation is active. Membership is by invitation. Ownership is earned throug
 
 ---
 
-[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with the Studio →](/studio) &nbsp;·&nbsp; [About →](/about)
+[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)

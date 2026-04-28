@@ -129,14 +129,14 @@ The goal is a high-trust environment for real work.
 
 ---
 
-## The Relationship to the Studio
+## The Relationship to the Consultancy
 
-The Practice and the Studio are connected, but they serve different purposes.
+The Practice and the Consultancy are connected, but they serve different purposes.
 
-The Studio works with external clients. The Commons is an internal practice.
+The Consultancy works with external clients. The Commons is an internal practice.
 
-The Practice is not a staffing pool for the Studio.
+The Practice is not a staffing pool for the Consultancy.
 
 ---
 
-[Learn about the Studio →](/studio) &nbsp;·&nbsp; [About →](/about)
+[Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
