@@ -6,10 +6,7 @@ meta_description: Ministry of Product — Consultancy consulting and Innovation 
 ---
 
 # Ministry of Product
-
-**A Consultancy that builds products. A Practice where builders get better.**
-
-Most product work fails not because the technology is bad — but because decisions happen in the wrong order. We help operators and founders sequence correctly, and we practice that craft ourselves.
+**We turn ideas into profitable businesses and maintain an Innovation Commons to keep improving how it’s done.**
 
 Ministry of Product operates in two ways:
 
@@ -28,15 +25,29 @@ The Consultancy applies the same judgment developed through the Practice: what m
 
 **Advise** — For teams with existing engineers, fractional CPO or product lead: setting direction with OKRs, shaping roadmap, keeping the team building the right things in the right order.
 
-**Accelerate** — Integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating. Not more AI — better leverage.
+**Accelerate** — Integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating.
 
 [Work with the Consultancy →](/consultancy)
 
+
 ---
+
+## The Innovation Commons
+
+The Practice is an Innovation Commons — a shared environment where ideas are explored before they become companies.
+
+It is not a program, a network, or an incubator. It is a place to:
+- work on ideas
+- improve the craft of building
+- develop judgment through repeated cycles of building and feedback
+
+Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
+
+[Learn about the Commons →](/innovation-commons)
 
 ## Reference Products
 
-Three recent products taken from concept to launch through the Consultancy:
+Three recent products taken from concept to launch:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
 
@@ -65,21 +76,6 @@ Three recent products taken from concept to launch through the Consultancy:
 </div>
 
 </div>
-
----
-
-## The Innovation Commons
-
-The Practice is an Innovation Commons — a shared environment where ideas are explored before they become companies.
-
-It is not a program, a network, or an incubator. It is a place to:
-- work on ideas
-- improve the craft of building
-- develop judgment through repeated cycles of building and feedback
-
-Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
-
-[Learn about the Commons →](/innovation-commons)
 
 ---
 
