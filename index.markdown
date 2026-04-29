@@ -43,7 +43,7 @@ It is not a program, a network, or an incubator. It is a place to:
 
 Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
 
-[Learn about the Commons →](/innovation-commons)
+[Visit the Commons →](https://projects.ministryofproduct.com)
 
 ## Reference Products
 
