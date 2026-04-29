@@ -12,7 +12,11 @@ Hi, I'm Matt Paulin. I run Ministry of Product out of Seattle.
 
 I've spent 20 years founding companies, launching products, and delivering software that people actually use. Ministry of Product is where I do that work most deliberately — as a Consultancy that builds alongside clients, and as an Innovation Commons where builders practice the craft.
 
+<<<<<<< HEAD
 ---
+=======
+The products I’ve built most recently are [TrueUp](https://trueup.pro), [SoundPoints](https://soundpoints.com), [FortunateMatch](https://fortunatematch.com), and [Innovation Commons](https://projects.ministryofproduct.com). Each one went from conversation to live product. That process — moving fast, staying grounded, and building the right thing — is what I bring to every engagement.
+>>>>>>> 0a3cef2 (Add Innovation Commons website links)
 
 ## How I Think About Product Work
 
