@@ -8,7 +8,29 @@ meta_description: The Innovation Commons is a shared environment where ideas are
 
 # Innovation Commons
 
-The Innovation Commons is the Practice side of Ministry of Product.
+An Innovation Commons is a shared environment designed for the phase before a company exists.
+
+Most systems push people quickly toward structure — roles, equity, expectations — before there is enough signal to justify them. The Innovation Commons takes a different approach. It creates a space where ideas can be explored through building, collaboration, and feedback without the immediate pressure to formalize.
+
+People participate by contributing to real work. They may bring their own ideas or join others based on interest and conviction. There is no assignment of roles, and no guaranteed ownership. Instead, influence and eventual ownership are earned through contribution over time.
+
+Work progresses unevenly. Many ideas are explored briefly. A smaller number gain traction through continued effort and demonstrated value. As projects evolve, they move through stages: from early concept, to working product, to something used and potentially generating revenue. Only when there is clear signal does structure begin to form: a committed team, defined roles, and eventually formal ownership.
+
+The Commons operates as a practice. Participants improve by repeatedly going through cycles of building, receiving feedback, and refining their work. Regular rituals, such as short presentations and direct critique, create accountability and accelerate learning.
+
+Ownership, when it emerges, reflects actual contribution rather than early assumptions. Systems like milestone-based contribution tracking help align effort with eventual stake, but these remain informal until a project becomes a company.
+
+The primary output of an Innovation Commons is not companies, although some are created. The primary output is people who are better at building: people with stronger judgment, clearer thinking, and more experience turning ideas into something real.
+
+Over time, this combination of practice, contribution-based ownership, and delayed structure creates a more reliable path from idea to business without forcing that outcome prematurely.
+
+[Visit the active Commons →](https://projects.ministryofproduct.com)
+
+---
+
+## The Ministry of Product Commons
+
+The Ministry of Product Innovation Commons is the Practice side of Ministry of Product.
 
 It is a shared environment where:
 - ideas are explored before they become companies
@@ -139,4 +161,4 @@ The Practice is not a staffing pool for the Consultancy.
 
 ---
 
-[Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
+[Visit the active Commons →](https://projects.ministryofproduct.com) &nbsp;·&nbsp; [Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)

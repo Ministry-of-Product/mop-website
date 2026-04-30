@@ -10,7 +10,7 @@ meta_description: Matt Paulin runs Ministry of Product — a Consultancy that bu
 
 Hi, I'm Matt Paulin. I run Ministry of Product out of Seattle.
 
-I've spent 20 years founding companies, launching products, and delivering software that people actually use. Ministry of Product is where I do that work most deliberately — as a Consultancy that builds alongside clients, and as an [Innovation Commons](https://projects.ministryofproduct.com) where builders practice the craft.
+I've spent 20 years founding companies, launching products, and delivering software that people actually use. Ministry of Product is where I do that work most deliberately — as a Consultancy that builds alongside clients, and as an [Innovation Commons](/innovation-commons/) where builders practice the craft.
 
 ---
 
@@ -30,7 +30,7 @@ Ministry of Product operates as both a Consultancy and a Practice.
 
 **The Consultancy** works with teams to build real products. Work is structured. Outcomes are defined. Accountability is explicit.
 
-**The Practice** is a smaller, invite-only group — an [Innovation Commons](https://projects.ministryofproduct.com) — focused on improving the craft through hands-on work. Ideas are explored before they become companies. Ownership is earned through contribution. Structure forms only when there is real signal.
+**The Practice** is a smaller, invite-only group — an [Innovation Commons](/innovation-commons/) — focused on improving the craft through hands-on work. Ideas are explored before they become companies. Ownership is earned through contribution. Structure forms only when there is real signal.
 
 The two are connected, but they serve different purposes. The Practice is not a staffing pool for the Consultancy.
 
@@ -58,4 +58,4 @@ I write about product development, AI, and how software gets built at [mattpauli
 
 ---
 
-[Work with the Consultancy →](/consultancy) &nbsp;·&nbsp; [The Innovation Commons →](https://projects.ministryofproduct.com)
+[Work with the Consultancy →](/consultancy) &nbsp;·&nbsp; [The Innovation Commons →](/innovation-commons/)

@@ -36,6 +36,8 @@ The Consultancy applies the same judgment developed through the Practice: what m
 
 The Practice is an Innovation Commons — a shared environment where ideas are explored before they become companies.
 
+In short: an Innovation Commons is a place for the pre-company phase, where people build together, test ideas against reality, and let contribution and signal determine what deserves structure.
+
 It is not a program, a network, or an incubator. It is a place to:
 - work on ideas
 - improve the craft of building
@@ -43,7 +45,10 @@ It is not a program, a network, or an incubator. It is a place to:
 
 Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
 
-[Visit the Commons →](https://projects.ministryofproduct.com)
+<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0;">
+  <a href="/innovation-commons/" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; background: #111827; color: #fff; text-decoration: none; font-weight: 600;">Read the Innovation Commons explainer →</a>
+  <a href="https://projects.ministryofproduct.com" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none; font-weight: 600;">Visit the active Commons →</a>
+</div>
 
 ## Reference Products
 
@@ -75,13 +80,6 @@ Three recent products taken from concept to launch:
   <p style="margin: auto 0 0 0; color: #fff;"><a href="/case-studies/2025/04/16/fortunatematch-event-networking" style="position: relative; z-index: 2; color: #fff; text-decoration: underline;">Read more →</a></p>
 </div>
 
-<div style="position: relative; display: flex; flex-direction: column; background: linear-gradient(160deg, #111827 0%, #2563eb 55%, #14b8a6 100%); border-radius: 8px; padding: 1.75rem; color: #fff;">
-  <a href="https://projects.ministryofproduct.com" aria-label="Visit Innovation Commons" style="position: absolute; inset: 0; z-index: 1; border-radius: 8px;"></a>
-  <a href="https://projects.ministryofproduct.com" target="_blank" style="position: relative; z-index: 2; color: #fff; text-decoration: none;"><h3 style="margin: 0 0 0.25rem 0; font-size: 1.5rem; font-weight: 700; color: #fff;">Innovation Commons</h3></a>
-  <p style="margin: 0 0 0.75rem 0; font-size: 1.05rem; font-style: italic; color: #fff; opacity: 0.95;">A shared space for ideas and projects.</p>
-  <p style="margin: 0 0 1.25rem 0; color: #fff;">A community project workspace for capturing idea fragments, developing them into concepts, and turning the strongest opportunities into collaborative projects.</p>
-  <p style="margin: auto 0 0 0; color: #fff;"><a href="https://projects.ministryofproduct.com" style="position: relative; z-index: 2; color: #fff; text-decoration: underline;">Visit Innovation Commons →</a></p>
-</div>
 
 </div>
 
