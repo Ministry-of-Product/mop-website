@@ -47,7 +47,7 @@ Participation is active. Membership is by invitation. Ownership is earned throug
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0;">
   <a href="/innovation-commons/" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Read the Innovation Commons explainer →</a>
-  <a href="https://projects.ministryofproduct.com" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Visit the active Commons →</a>
+  <a href="https://commons.ministryofproduct.com" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Visit the active Commons →</a>
 </div>
 
 ## Reference Products

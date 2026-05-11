@@ -24,7 +24,7 @@ The primary output of an Innovation Commons is not companies, although some are 
 
 Over time, this combination of practice, contribution-based ownership, and delayed structure creates a more reliable path from idea to business without forcing that outcome prematurely.
 
-[Visit the active Commons →](https://projects.ministryofproduct.com)
+[Visit the active Commons →](https://commons.ministryofproduct.com)
 
 ---
 
@@ -161,4 +161,4 @@ The Practice is not a staffing pool for the Consultancy.
 
 ---
 
-[Visit the active Commons →](https://projects.ministryofproduct.com) &nbsp;·&nbsp; [Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
+[Visit the active Commons →](https://commons.ministryofproduct.com) &nbsp;·&nbsp; [Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
