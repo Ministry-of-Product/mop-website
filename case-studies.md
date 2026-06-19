@@ -8,7 +8,7 @@ meta_description: Case studies demonstrating judgment through decisions. Real ex
 
 # Case Studies
 
-Examples of building alongside clients using AI as a thinking partner—moving from idea to product through rapid, grounded iteration.
+Products we've taken from idea to launch—both our own ventures and work built alongside clients—using AI as a thinking partner through rapid, grounded iteration.
 
 
 ## Recent Case Studies

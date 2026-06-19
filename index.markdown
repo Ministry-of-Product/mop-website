@@ -1,25 +1,33 @@
 ---
 layout: default
 title: Ministry of Product
-description: A Consultancy that builds AI-enabled products, and an Innovation Commons where the craft is practiced.
-meta_description: Ministry of Product — Consultancy consulting and Innovation Commons for builders, founders, and operators in Seattle.
+description: A venture studio that builds its own products and advises founders on AI, product, and operational decisions.
+meta_description: Ministry of Product — a venture studio that builds and incubates its own products, and an advisory practice for founder-led teams in Seattle.
 ---
 
 # Ministry of Product
-**We turn ideas into profitable businesses and maintain an Innovation Commons to keep improving how it’s done.**
+**A venture studio that helps founders build what comes next.**
 
-Ministry of Product operates in two ways:
+We turn ideas into real, profitable businesses — building products of our own, and helping founder-led teams build theirs. We work in two ways:
 
-- **The Consultancy** works with external teams to build real, AI-enabled products.
-- **The Innovation Commons** is an invite-only practice where builders explore ideas before they become companies.
+- **Venture Studio** — We identify opportunities, build products, run experiments, and incubate businesses of our own.
+- **Advisory & Consulting** — We help founder-led teams make better product, AI, and operational decisions — and build the software when it's the right move.
 
 ---
 
-## The Consultancy
+## Venture Studio
 
-We partner with founders and executives to turn vision into working software — using AI-native development to move faster than a traditional team could on their own.
+We build, launch, and incubate our own products and businesses. Ideas become prototypes, prototypes earn users, and the ones that prove real spin out as companies.
 
-The Consultancy applies the same judgment developed through the Practice: what matters now, what can wait, and where effort will compound versus stall.
+That work runs on an [Innovation Commons](/innovation-commons/) — an invite-only practice where builders explore ideas before they become companies, and ownership is earned through contribution rather than assigned upfront. It's the engine that turns ideas into ventures.
+
+[Explore the Venture Studio →](/venture-studio/) &nbsp;·&nbsp; [Run the simulator →](/venturestudio/)
+
+---
+
+## Advisory & Consulting
+
+We partner with founders and executives to turn vision into working software — using AI-native development to move faster than a traditional team could on its own. We bring the same judgment we develop building our own ventures: what matters now, what can wait, and where effort will compound versus stall.
 
 **Build** — Embed as a product partner on new software ideas, from concept to live product. Product strategy, architecture decisions, and execution — so founders stay focused on the business.
 
@@ -27,28 +35,7 @@ The Consultancy applies the same judgment developed through the Practice: what m
 
 **Accelerate** — Integrate AI tooling into your development process to cut the time and cost of building, testing, and iterating.
 
-[Work with the Consultancy →](/consultancy)
-
-
----
-
-## The Innovation Commons
-
-The Practice is an Innovation Commons — a shared environment where ideas are explored before they become companies.
-
-In short: an Innovation Commons is a place for the pre-company phase, where people build together, test ideas against reality, and let contribution and signal determine what deserves structure.
-
-It is not a program, a network, or an incubator. It is a place to:
-- work on ideas
-- improve the craft of building
-- develop judgment through repeated cycles of building and feedback
-
-Participation is active. Membership is by invitation. Ownership is earned through contribution, not assigned upfront.
-
-<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0;">
-  <a href="/innovation-commons/" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Read the Innovation Commons explainer →</a>
-  <a href="https://commons.ministryofproduct.com" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Visit the active Commons →</a>
-</div>
+[Work with us →](/advisory/)
 
 ## Reference Products
 
@@ -85,4 +72,4 @@ Three recent products taken from concept to launch:
 
 ---
 
-[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
+[Read case studies →](/case-studies) &nbsp;·&nbsp; [Work with us →](/advisory) &nbsp;·&nbsp; [About →](/about)

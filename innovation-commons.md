@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Innovation Commons
-description: The Ministry of Product Innovation Commons — an invite-only practice where builders explore ideas before they become companies.
+description: The Innovation Commons is how the Ministry of Product Venture Studio builds — an invite-only practice where builders explore ideas before they become companies.
 permalink: /innovation-commons/
-meta_description: The Innovation Commons is a shared environment where ideas are explored before they become companies. Active contribution, earned ownership, no passive members.
+meta_description: The Innovation Commons is the operating model of the Ministry of Product Venture Studio — a shared environment where ideas are explored before they become companies, with ownership earned through contribution.
 ---
 
 # Innovation Commons
 
-An Innovation Commons is a shared environment designed for the phase before a company exists.
+The Innovation Commons is how the [Venture Studio](/venture-studio/) builds. It is a shared environment designed for the phase before a company exists.
 
 Most systems push people quickly toward structure — roles, equity, expectations — before there is enough signal to justify them. The Innovation Commons takes a different approach. It creates a space where ideas can be explored through building, collaboration, and feedback without the immediate pressure to formalize.
 
@@ -30,7 +30,7 @@ Over time, this combination of practice, contribution-based ownership, and delay
 
 ## The Ministry of Product Commons
 
-The Ministry of Product Innovation Commons is the Practice side of Ministry of Product.
+The Ministry of Product Innovation Commons is the engine behind the [Venture Studio](/venture-studio/) — how ideas become ventures.
 
 It is a shared environment where:
 - ideas are explored before they become companies
@@ -131,7 +131,7 @@ When a project shows strong signal:
 - Expectations become explicit
 - Ownership can be formalized into equity
 
-The Practice supports the transition. It does not force it.
+The Commons supports the transition. It does not force it.
 
 Most ideas are explored briefly. A small number gain momentum. Some become companies.
 
@@ -151,14 +151,14 @@ The goal is a high-trust environment for real work.
 
 ---
 
-## The Relationship to the Consultancy
+## The Relationship to Advisory
 
-The Practice and the Consultancy are connected, but they serve different purposes.
+The Commons and the [advisory practice](/advisory/) are connected, but they serve different purposes.
 
-The Consultancy works with external clients. The Commons is an internal practice.
+The Commons is how the Venture Studio builds its own products internally. Advisory works with external clients. The same judgment runs through both.
 
-The Practice is not a staffing pool for the Consultancy.
+The Commons is not a staffing pool for advisory work.
 
 ---
 
-[Visit the active Commons →](https://commons.ministryofproduct.com) &nbsp;·&nbsp; [Learn about the Consultancy →](/consultancy) &nbsp;·&nbsp; [About →](/about)
+[Visit the active Commons →](https://commons.ministryofproduct.com) &nbsp;·&nbsp; [Explore the Venture Studio →](/venture-studio/) &nbsp;·&nbsp; [About →](/about)
