@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.bundle/
+# Gemfile.lock is generated locally with a newer Bundler than GitHub Pages'
+# jekyll-build-pages container can parse; let the builder resolve the Gemfile.
+Gemfile.lock
