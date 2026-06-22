@@ -3,6 +3,7 @@ layout: default
 title: Ministry of Product
 description: A Consultancy that builds AI-enabled products, and an Innovation Commons where the craft is practiced.
 meta_description: Ministry of Product — Consultancy consulting and Innovation Commons for builders, founders, and operators in Seattle.
+numbered_sections: true
 ---
 
 <div class="workshop-hero">
@@ -25,6 +26,12 @@ Ministry of Product operates in two ways:
 
 - **The Consultancy** works with external teams to build real, AI-enabled products.
 - **The Innovation Commons** is an invite-only practice where builders explore ideas before they become companies.
+
+<div class="mop-stats">
+  <div class="stat"><span class="num">20</span><span class="lbl">Years<br>shipping</span></div>
+  <div class="stat"><span class="num">3</span><span class="lbl">Reference<br>products</span></div>
+  <div class="stat"><span class="num">5</span><span class="lbl">Pathway<br>stages</span></div>
+</div>
 
 ---
 

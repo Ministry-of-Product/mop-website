@@ -409,6 +409,50 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 .rule::before, .rule::after { content: ""; height: 2px; background: currentColor; flex: 1; }
 .rule .gear { color: var(--mop-copper); font-size: 20px; }
 
+/* ---- Gauge stats (StatGauge) ---- */
+.mop-stats {
+  display: flex;
+  gap: 2.25rem;
+  flex-wrap: wrap;
+  margin: 1.75rem 0;
+}
+.stat { display: flex; align-items: baseline; gap: 10px; }
+.stat .num {
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--mop-copper-dark);
+}
+.stat .lbl {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  line-height: 1.1;
+  color: var(--text-muted);
+}
+
+/* ---- Section index numbers (opt-in via front matter: numbered_sections) ---- */
+.numbered-sections { counter-reset: section; }
+.numbered-sections h2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  counter-increment: section;
+}
+.numbered-sections h2::after {
+  content: counter(section, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--mop-copper-dark);
+  white-space: nowrap;
+  align-self: center;
+}
+
 /* ============================================================
    Reference-product patina plates
    ============================================================ */

@@ -1,5 +1,6 @@
 ---
 layout: default
+numbered_sections: true
 title: Consultancy
 description: Ministry of Product Consultancy — embedded product partner for founders and executives building AI-enabled software.
 permalink: /consultancy/
