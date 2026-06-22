@@ -1,5 +1,6 @@
 ---
 layout: default
+numbered_sections: true
 title: About
 description: Matt Paulin — product leader, builder, and founder of Ministry of Product. 20 years of shipping software across industries.
 permalink: /about/

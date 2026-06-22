@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132" fill="#1F1B16">
+<g id="buildings">
+  
+  <path d="M8 50 H40 V120 H8 Z" fill="none" stroke="#1F1B16" stroke-width="3"></path>
+  <rect x="13.0" y="56.0" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="64.5" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="73.0" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="81.5" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="90.0" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="98.5" width="4.5" height="5" rx="0.6"></rect><rect x="13.0" y="107.0" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="56.0" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="64.5" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="73.0" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="81.5" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="90.0" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="98.5" width="4.5" height="5" rx="0.6"></rect><rect x="20.5" y="107.0" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="56.0" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="64.5" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="73.0" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="81.5" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="90.0" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="98.5" width="4.5" height="5" rx="0.6"></rect><rect x="28.0" y="107.0" width="4.5" height="5" rx="0.6"></rect>
+  
+  <path d="M80 58 H112 V120 H80 Z" fill="none" stroke="#1F1B16" stroke-width="3"></path>
+  <rect x="85.0" y="64.0" width="4.5" height="5" rx="0.6"></rect><rect x="85.0" y="72.5" width="4.5" height="5" rx="0.6"></rect><rect x="85.0" y="81.0" width="4.5" height="5" rx="0.6"></rect><rect x="85.0" y="89.5" width="4.5" height="5" rx="0.6"></rect><rect x="85.0" y="98.0" width="4.5" height="5" rx="0.6"></rect><rect x="85.0" y="106.5" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="64.0" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="72.5" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="81.0" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="89.5" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="98.0" width="4.5" height="5" rx="0.6"></rect><rect x="92.5" y="106.5" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="64.0" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="72.5" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="81.0" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="89.5" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="98.0" width="4.5" height="5" rx="0.6"></rect><rect x="100.0" y="106.5" width="4.5" height="5" rx="0.6"></rect>
+</g>
+<g id="bulb" fill="none" stroke="#1F1B16" stroke-width="4" stroke-linejoin="round">
+  
+  <path d="M60 8 C42 8 30 21 30 41 C30 57 40 65 46 74 L74 74 C80 65 90 57 90 41 C90 21 78 8 60 8 Z"></path>
+  
+  <path d="M48 80 H72 M47 87 H73 M48 94 H72" stroke-width="4.5"></path>
+  <path d="M52 100 H68 L65 108 H55 Z" fill="#1F1B16" stroke="none"></path>
+</g>
+<g id="needle" fill="none" stroke="#1F1B16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M54 72 L58 44 M66 72 L62 44"></path>
+  
+  <ellipse cx="60" cy="44" rx="13" ry="3.6" fill="#1F1B16" stroke="none"></ellipse>
+  <path d="M49 46 Q60 51 71 46" stroke-width="2.4"></path>
+  
+  <path d="M60 40.4 L60 24"></path>
+  <circle cx="60" cy="22.5" r="2.2" fill="#1F1B16" stroke="none"></circle>
+  
+  <path d="M54 72 L51 78 M66 72 L69 78"></path>
+</g>
+</svg>

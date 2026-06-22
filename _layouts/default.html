@@ -9,7 +9,7 @@
 
     <main class="page-content" aria-label="Content">
       <div class="page-container">
-        <div class="glass-content">
+        <div class="glass-content{% if page.numbered_sections %} numbered-sections{% endif %}">
         {{ content }}
           {%- include footer.html -%}
         </div>

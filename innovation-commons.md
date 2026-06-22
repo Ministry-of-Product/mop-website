@@ -1,5 +1,6 @@
 ---
 layout: default
+numbered_sections: true
 title: Innovation Commons
 description: The Ministry of Product Innovation Commons — an invite-only practice where builders explore ideas before they become companies.
 permalink: /innovation-commons/

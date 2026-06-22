@@ -6,7 +6,7 @@ categories: case-studies
 excerpt: Event networking defaults to whoever is standing near you. FortunateMatch replaces that with intent-based AI matching—attendees declare what they need, and the system surfaces the most valuable introductions in real time.
 ---
 
-<div class="case-study-bar" style="background: linear-gradient(90deg, #0f172a 0%, #4f46e5 60%, #6366f1 100%);"></div>
+<div class="case-study-bar" style="background: var(--plate-fortunate);"></div>
 
 # FortunateMatch: AI-Powered Networking That Works
 
