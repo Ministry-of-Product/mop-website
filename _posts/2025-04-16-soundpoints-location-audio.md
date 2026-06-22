@@ -6,7 +6,7 @@ categories: case-studies
 excerpt: Audio content has no spatial dimension—until now. SoundPoints pins audio to GPS coordinates and unlocks it when you arrive. A two-sided marketplace for creators and explorers, currently in beta.
 ---
 
-<div class="case-study-bar" style="background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #e94560 100%);"></div>
+<div class="case-study-bar" style="background: var(--plate-soundpoints);"></div>
 
 # SoundPoints: A New Medium for Location-Based Audio
 
