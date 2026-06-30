@@ -28,5 +28,5 @@ The Venture Studio runs on an [Innovation Commons](/innovation-commons/): an inv
 
 ---
 
-[Run the simulator →](/venturestudio/) [Work with us →](/advisory) [About →](/about)
+[Run the simulator →](/venturestudio/) [Work with us →](/advisory) [About →](/about/)
 {: .cta-row}

@@ -22,10 +22,11 @@ numbered_sections: true
   </div>
 </div>
 
-Ministry of Product operates in two ways:
 
 - **The Venture Studio** identifies opportunities, builds products, runs experiments, and incubates businesses of our own.
 - **Advisory & Consulting** helps founder-led teams make better product, AI, and operational decisions — and builds the software when it's the right move.
+- **Innovation Commons** where anyone can work on an idea.
+
 
 <div class="mop-stats">
   <div class="stat"><span class="num" id="stat-fragments">336</span><span class="lbl">Ideas<br>explored</span></div>

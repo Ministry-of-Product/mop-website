@@ -10,7 +10,7 @@ meta_description: The Workbench is where Ministry of Product publishes its everg
 
 # The Workbench
 
-The frameworks, rules, and operating models behind how we build — written down so they can be learned, used, and built on. Not a blog; these are evergreen references, not news.
+These are the tools we use to build.
 
 <div class="wb-list">
 {% assign docs = site.workbench | sort: "order" %}
