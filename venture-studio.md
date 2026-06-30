@@ -18,7 +18,7 @@ We back a portfolio of work rather than a single bet. Most ideas are explored br
 
 ## How It Works — The Engine
 
-The Venture Studio runs on an [Innovation Commons](/innovation-commons/): an invite-only practice where builders explore ideas before they become companies. It's how ideas actually become ventures.
+The Venture Studio runs on an [Innovation Commons](/innovation-commons/): an invite-only practice where builders explore ideas before they become companies. It's how ideas actually become ventures. The full operating model is written down in The Workbench — the [Innovation Commons explainer](/workbench/innovation-commons/) and the [Ministry of Product Charter](/workbench/mop-charter/).
 
 **Earned ownership (BSSS).** Ownership isn't assigned upfront. It's earned through contribution using **Big Slice / Small Slice** — a venture's ownership opens in milestone-based slices, and contributors earn proportional stakes as the work happens. Completed slices lock; future ones stay unallocated until the work is done.
 

@@ -17,150 +17,29 @@ Most systems push people quickly toward structure — roles, equity, expectation
 
 People participate by contributing to real work. They may bring their own ideas or join others based on interest and conviction. There is no assignment of roles, and no guaranteed ownership. Instead, influence and eventual ownership are earned through contribution over time.
 
-Work progresses unevenly. Many ideas are explored briefly. A smaller number gain traction through continued effort and demonstrated value. As projects evolve, they move through stages: from early concept, to working product, to something used and potentially generating revenue. Only when there is clear signal does structure begin to form: a committed team, defined roles, and eventually formal ownership.
+Work progresses unevenly. Many ideas are explored briefly. A smaller number gain traction through continued effort and demonstrated value. Only when there is clear signal does structure begin to form: a committed team, defined roles, and eventually formal ownership.
 
-The Commons operates as a practice. Participants improve by repeatedly going through cycles of building, receiving feedback, and refining their work. Regular rituals, such as short presentations and direct critique, create accountability and accelerate learning.
-
-Ownership, when it emerges, reflects actual contribution rather than early assumptions. Systems like milestone-based contribution tracking help align effort with eventual stake, but these remain informal until a project becomes a company.
-
-The primary output of an Innovation Commons is not companies, although some are created. The primary output is people who are better at building: people with stronger judgment, clearer thinking, and more experience turning ideas into something real.
-
-Over time, this combination of practice, contribution-based ownership, and delayed structure creates a more reliable path from idea to business without forcing that outcome prematurely.
-
-[Visit the active Commons →](https://commons.ministryofproduct.com)
+The primary output is not companies, although some are created. The primary output is people who are better at building — with stronger judgment, clearer thinking, and more experience turning ideas into something real.
 
 ---
 
-## The Ministry of Product Commons
+## How it works, in brief
 
-The Ministry of Product Innovation Commons is the engine behind the [Venture Studio](/venture-studio/) — how ideas become ventures.
+- **Participation, not membership.** People bring ideas, join projects, and contribute. There are no observers and no assigned roles at the start.
+- **Earned ownership (BSSS).** Ownership isn't assigned upfront — it's earned through contribution using [Big Slice / Small Slice](/workbench/big-slice-small-slice/), and locks as milestones complete.
+- **The Product Path.** Ventures climb the same stages — idea, prototype, users, revenue, stable system — with focus shifting from usefulness to durability as they mature.
+- **Structure at the last responsible moment.** When a project shows real signal, a committed team forms and ownership can be formalized into equity. Some projects become companies.
 
-It is a shared environment where:
-- ideas are explored before they become companies
-- people contribute based on interest and conviction
-- ownership is earned through contribution over time
-- structure emerges only when something proves real
-
-It is not a program, a network, or an incubator.
+The Commons is the engine of the Venture Studio. It is distinct from the [Advisory practice](/advisory/), which works with external clients, and it is not a staffing pool for that work.
 
 ---
 
-## Core Philosophy
+## Read the full explainer
 
-**Practice over theory.**
-Understanding comes from building, not discussion alone.
+This page is the overview. The complete operating model — definition, philosophy, rituals, and processes — lives in The Workbench.
 
-**Exploration before commitment.**
-Ideas are explored before roles, ownership, or companies are defined.
-
-**Contribution over entitlement.**
-Ownership and influence are earned through work.
-
-**Signal over opinion.**
-Decisions are based on what works, not what sounds right.
-
-**Small, high-trust environment.**
-Quality of interaction is prioritized over scale.
-
----
-
-## How It Works
-
-### Participation
-
-The Commons is defined by participation, not membership.
-
-People:
-- bring ideas
-- join projects
-- contribute to the work
-
-There are no observers. There are no assigned roles at the start. There are no guaranteed outcomes.
-
-Membership is maintained through continued contribution.
-
-### The Monthly Session
-
-Each participant:
-- Presents for 3 minutes: what they built, what they learned, what they plan next
-- Receives 5 minutes of direct critique
-
-This is the primary feedback loop. The goal is clarity, accountability, and improvement over time.
-
----
-
-## How Ownership Works
-
-Ownership is not assigned upfront. It is earned through contribution using the **Big Slice / Small Slice (BSSS)** framework.
-
-- Work is divided into milestone-based phases (Big Slices)
-- Contributors earn proportional ownership within each phase (Small Slices)
-- Ownership is locked as milestones complete
-
-This tracks contribution but is not legal equity.
-
-Formal ownership is defined only when a project becomes a company — at the last responsible moment, not before.
-
-[Read more about BSSS →](https://mattpaulin.com/product-management/startups/ownership/equity/frameworks/2025/12/21/bsss-updated-rules-and-allocation.html)
-
----
-
-## How Products Progress
-
-Projects move through stages using the **Product Pathway**:
-
-1. Idea
-2. Prototype
-3. Early Users
-4. Revenue
-5. Stable System
-
-Focus shifts at each stage:
-- Early: problem clarity and usefulness
-- Mid: user engagement and validation
-- Late: reliability, scale, sustainability
-
-Progress is measured by real movement through these stages — not internal opinion.
-
-[Read more about the Product Pathway →](https://mattpaulin.com/software/product-management/readiness-levels/2026/04/02/ProductPathway.html)
-
----
-
-## Transition to Company
-
-When a project shows strong signal:
-
-- A committed team forms
-- Expectations become explicit
-- Ownership can be formalized into equity
-
-The Commons supports the transition. It does not force it.
-
-Most ideas are explored briefly. A small number gain momentum. Some become companies.
-
-The primary outcome is improved capability, not companies.
-
----
-
-## Boundaries
-
-To protect the Commons:
-- Participation is invite-only
-- Participation is active — no passive members
-- Low contribution leads to removal
-- The group remains intentionally small
-
-The goal is a high-trust environment for real work.
-
----
-
-## The Relationship to Advisory
-
-The Commons and the [advisory practice](/advisory/) are connected, but they serve different purposes.
-
-The Commons is how the Venture Studio builds its own products internally. Advisory works with external clients. The same judgment runs through both.
-
-The Commons is not a staffing pool for advisory work.
+[Read the full explainer in The Workbench →](/workbench/innovation-commons/){: .btn .btn-copper}
+{: .commons-cta}
 
 ---
 
