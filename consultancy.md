@@ -67,10 +67,10 @@ The Consultancy is not a staffing pool for the Practice.
 
 These are recent Consultancy products taken from concept to launch:
 
-- **[TrueUp](https://trueup.pro)** — Remote expert guidance for skilled tradespeople. [Case study →](/case-studies/2025/04/16/trueup-remote-expert-platform)
-- **[SoundPoints](https://soundpoints.com)** — Location-based audio experiences for creators and explorers. [Case study →](/case-studies/2025/04/16/soundpoints-location-audio)
-- **[FortunateMatch](https://fortunatematch.com)** — AI-powered event matchmaking for organizers. [Case study →](/case-studies/2025/04/16/fortunatematch-event-networking)
+- **[TrueUp](https://trueup.pro)** — Remote expert guidance for skilled tradespeople. [View the venture →](/ventures/trueup/)
+- **[SoundPoints](https://soundpoints.com)** — Location-based audio experiences for creators and explorers. [View the venture →](/ventures/soundpoints/)
+- **[FortunateMatch](https://fortunatematch.com)** — AI-powered event matchmaking for organizers. [View the venture →](/ventures/fortunatematch/)
 
 ---
 
-[Get in touch →](mailto:info-at-ministryofproduct.com) &nbsp;·&nbsp; [Read case studies →](/case-studies)
+[Get in touch →](mailto:info-at-ministryofproduct.com) &nbsp;·&nbsp; [Explore the Venture Studio →](/venture-studio/)
