@@ -59,4 +59,5 @@ I write about product development, AI, and how software gets built at [mattpauli
 
 ---
 
-[Work with the Consultancy →](/consultancy) &nbsp;·&nbsp; [The Innovation Commons →](/innovation-commons/)
+[Explore the Venture Studio →](/venture-studio/) [Work with us →](/advisory/) [The Innovation Commons →](/innovation-commons/)
+{: .cta-row}

@@ -32,6 +32,19 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# The Workbench — evergreen explainer / reference material (not a blog)
+collections:
+  workbench:
+    output: true
+    permalink: /workbench/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: workbench
+    values:
+      layout: default
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

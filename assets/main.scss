@@ -286,15 +286,18 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 }
 
 /* markdown `---` renders the engraved divider: copper gear centered on a hairline */
-.glass-content hr {
+.glass-content hr,
+.glass-content footer::before {
   border: none;
   height: 24px;
-  margin: 2.5rem 0;
   background:
     url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 100 100%22 fill%3D%22%23B06A3A%22%3E%3Cpath fill-rule%3D%22evenodd%22 d%3D%22M 86.06 41.70 L 96.59 43.82 L 96.59 56.18 L 86.06 58.30 L 84.05 64.48 L 91.33 72.38 L 84.06 82.39 L 74.29 77.91 L 69.03 81.73 L 70.28 92.40 L 58.52 96.22 L 53.25 86.86 L 46.75 86.86 L 41.48 96.22 L 29.72 92.40 L 30.97 81.73 L 25.71 77.91 L 15.94 82.39 L 8.67 72.38 L 15.95 64.48 L 13.94 58.30 L 3.41 56.18 L 3.41 43.82 L 13.94 41.70 L 15.95 35.52 L 8.67 27.62 L 15.94 17.61 L 25.71 22.09 L 30.97 18.27 L 29.72 7.60 L 41.48 3.78 L 46.75 13.14 L 53.25 13.14 L 58.52 3.78 L 70.28 7.60 L 69.03 18.27 L 74.29 22.09 L 84.06 17.61 L 91.33 27.62 L 84.05 35.52 Z M50 30 A20 20 0 1 0 50.01 30 Z%22%3E%3C%2Fpath%3E%3Ccircle cx%3D%2250%22 cy%3D%2250%22 r%3D%228.5%22 fill%3D%22%23B06A3A%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") center / 20px 20px no-repeat,
     linear-gradient(var(--surface-card), var(--surface-card)) center / 44px 100% no-repeat,
     linear-gradient(var(--mop-iron-300), var(--mop-iron-300)) center / 100% var(--border-width-rule) no-repeat;
 }
+.glass-content hr { margin: 2.5rem 0; }
+/* the footer's top hairline gets the same engraved gear, for consistency */
+.glass-content footer::before { content: ""; display: block; margin-bottom: 2rem; }
 
 .glass-content code {
   font-family: var(--font-mono);
@@ -360,6 +363,137 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
   border-color: var(--border-strong);
 }
 .btn-ghost:hover { border-color: var(--mop-iron-900); color: var(--text-strong); text-decoration: none; }
+
+/* ============================================================
+   Stamped CTA plates — end-of-page calls to action (MIN-1000)
+   ============================================================ */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin: 2.75rem 0 0.5rem;
+}
+.cta-row a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.86rem;
+  line-height: 1.1;
+  color: var(--mop-copper-light);
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  background: var(--metal-iron);
+  border: 1.5px solid var(--mop-copper);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    inset 0 0 0 1px rgba(176, 106, 58, 0.22),
+    var(--shadow-card);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+  transition: var(--transition-metal), color 0.18s ease, border-color 0.18s ease;
+}
+/* engraved gothic corner brackets */
+.cta-row a::before,
+.cta-row a::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid var(--mop-brass);
+  opacity: 0.85;
+  pointer-events: none;
+}
+.cta-row a::before { top: 4px;    left: 4px;  border-right: 0; border-bottom: 0; }
+.cta-row a::after  { bottom: 4px; right: 4px; border-left: 0;  border-top: 0; }
+.cta-row a:hover {
+  color: #fff;
+  border-color: var(--mop-copper-light);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    inset 0 0 0 1px rgba(201, 138, 91, 0.38),
+    var(--shadow-raised);
+  text-decoration: none;
+}
+.cta-row a:hover::before,
+.cta-row a:hover::after { opacity: 1; border-color: var(--mop-copper-light); }
+
+/* Buttons used inside markdown prose must beat the .glass-content a link
+   styles (color/underline), otherwise they render as plain blue links. */
+.glass-content a.btn,
+.glass-content a.btn-copper,
+.glass-content a.btn-ghost,
+.glass-content a.btn-primary { text-decoration: none; }
+.glass-content a.btn-copper,
+.glass-content a.btn-copper:hover,
+.glass-content a.btn-primary,
+.glass-content a.btn-primary:hover { color: #fff; }
+.glass-content a.btn-ghost,
+.glass-content a.btn-ghost:hover { color: var(--text-strong); }
+
+/* Top-of-page CTA (e.g. Innovation Commons → live Commons) */
+.commons-cta { margin: 1.5rem 0 2rem; }
+
+/* The Workbench index cards */
+.wb-list { display: grid; gap: 1rem; margin: 2rem 0 1rem; }
+.glass-content a.wb-card,
+.glass-content a.wb-card:hover { text-decoration: none; }
+.wb-card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--mop-copper);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-metal), border-color 0.18s ease;
+}
+.wb-card:hover {
+  border-left-color: var(--mop-copper-dark);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-1px);
+}
+.wb-card h3 { margin: 0 0 0.35rem; color: var(--text-strong); }
+.wb-card p { margin: 0 0 0.6rem; color: var(--text-body); }
+.wb-card .wb-more {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--mop-copper-dark);
+}
+
+/* Tables in prose (e.g. Workbench explainers) */
+.glass-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+.glass-content th,
+.glass-content td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+.glass-content thead th {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--surface-subtle);
+  border-bottom: var(--border-width-rule) solid var(--mop-iron-300);
+}
+.glass-content tbody tr:last-child td {
+  border-bottom: var(--border-width-rule) solid var(--mop-iron-300);
+}
+.glass-content tbody tr:hover td { background: var(--surface-subtle); }
 
 /* ============================================================
    Hero (home) + engraved divider
@@ -517,8 +651,6 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
    ============================================================ */
 .glass-content footer {
   margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: var(--border-width-rule) solid var(--mop-iron-300);
   text-align: center;
 }
 .glass-content footer p { color: var(--text-muted); margin-bottom: 1rem; }
