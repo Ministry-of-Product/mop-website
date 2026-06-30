@@ -439,6 +439,62 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 /* Top-of-page CTA (e.g. Innovation Commons → live Commons) */
 .commons-cta { margin: 1.5rem 0 2rem; }
 
+/* The Workbench index cards */
+.wb-list { display: grid; gap: 1rem; margin: 2rem 0 1rem; }
+.glass-content a.wb-card,
+.glass-content a.wb-card:hover { text-decoration: none; }
+.wb-card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--mop-copper);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-metal), border-color 0.18s ease;
+}
+.wb-card:hover {
+  border-left-color: var(--mop-copper-dark);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-1px);
+}
+.wb-card h3 { margin: 0 0 0.35rem; color: var(--text-strong); }
+.wb-card p { margin: 0 0 0.6rem; color: var(--text-body); }
+.wb-card .wb-more {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--mop-copper-dark);
+}
+
+/* Tables in prose (e.g. Workbench explainers) */
+.glass-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+.glass-content th,
+.glass-content td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+.glass-content thead th {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--surface-subtle);
+  border-bottom: var(--border-width-rule) solid var(--mop-iron-300);
+}
+.glass-content tbody tr:last-child td {
+  border-bottom: var(--border-width-rule) solid var(--mop-iron-300);
+}
+.glass-content tbody tr:hover td { background: var(--surface-subtle); }
+
 /* ============================================================
    Hero (home) + engraved divider
    ============================================================ */
