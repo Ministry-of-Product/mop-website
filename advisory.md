@@ -68,5 +68,5 @@ Example projects we've taken from concept to launch:
 
 ---
 
-[Get in touch →](mailto:info-at-ministryofproduct.com) [Explore the Venture Studio →](/venture-studio/)
+[Explore the Venture Studio →](/venture-studio/)
 {: .cta-row}
