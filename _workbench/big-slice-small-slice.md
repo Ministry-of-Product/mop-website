@@ -100,6 +100,11 @@ The following table is a **recommended allocation** of ownership across Release 
 | RL10 | Stable     | 12%  |
 | **Total** | | **100%** |
 
+<figure class="wb-figure">
+<img src="/assets/workbench/bsss-allocation.png" alt="Slices (BSSS) ownership allocation chart: a progress bar reading 100% allocated, 0% remaining, beside a pie chart splitting the whole 100% across ten Release Levels — RL1 Idea 4%, RL2 Vision 4%, RL3 Prototype 4%, RL4 Play Test 12%, RL5 Release 16%, RL6 Users 12%, RL7 Audience 12%, RL8 Monetized 12%, RL9 Scalable 12%, RL10 Stable 12%.">
+<figcaption>The recommended BSSS allocation, visualized: the full 100% budgeted across Release Levels RL1–RL10, with the heaviest slices concentrated in mid-stage execution. <a href="/foundation/BSSS.pdf">Download the BSSS worksheet (PDF) →</a></figcaption>
+</figure>
+
 The philosophy behind this allocation:
 
 - Early stages matter, but are highly speculative
