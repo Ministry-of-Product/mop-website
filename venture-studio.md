@@ -28,17 +28,5 @@ The Venture Studio runs on an [Innovation Commons](/innovation-commons/): an inv
 
 ---
 
-## See It Run
-
-We built an interactive model of the whole machine — fund a studio, build a venture funnel, watch ownership fill in, and spin out companies.
-
-<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0;">
-  <a href="/venturestudio/" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Run the Venture Studio Simulator →</a>
-  <a href="/innovation-commons/" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Read the Innovation Commons explainer →</a>
-  <a href="https://commons.ministryofproduct.com" style="display: inline-block; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #d1d5db; color: #111827; text-decoration: none;">Visit the active Commons →</a>
-</div>
-
----
-
 [Run the simulator →](/venturestudio/) [Work with us →](/advisory) [About →](/about)
 {: .cta-row}
