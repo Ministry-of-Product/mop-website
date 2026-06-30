@@ -28,10 +28,29 @@ Ministry of Product operates in two ways:
 - **Advisory & Consulting** helps founder-led teams make better product, AI, and operational decisions — and builds the software when it's the right move.
 
 <div class="mop-stats">
-  <div class="stat"><span class="num">20</span><span class="lbl">Years<br>shipping</span></div>
-  <div class="stat"><span class="num">3</span><span class="lbl">Ventures<br>launched</span></div>
-  <div class="stat"><span class="num">5</span><span class="lbl">Pathway<br>stages</span></div>
+  <div class="stat"><span class="num" id="stat-fragments">336</span><span class="lbl">Ideas<br>explored</span></div>
+  <div class="stat"><span class="num" id="stat-ventures">14</span><span class="lbl">Ventures<br>taking shape</span></div>
+  <div class="stat"><span class="num">20</span><span class="lbl">Years<br>of craft</span></div>
 </div>
+<script>
+(function () {
+  var FLOOR_FRAGMENTS = 50;
+  var FLOOR_VENTURES  = 10;
+  var elF = document.getElementById('stat-fragments');
+  var elV = document.getElementById('stat-ventures');
+  fetch('https://idea-growth-backend-mop-j6pdv7rpoq-uc.a.run.app/api/stats/public')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (elF && typeof data.fragments === 'number' && data.fragments >= FLOOR_FRAGMENTS) {
+        elF.textContent = data.fragments.toLocaleString();
+      }
+      if (elV && typeof data.ventures === 'number' && data.ventures >= FLOOR_VENTURES) {
+        elV.textContent = data.ventures.toLocaleString();
+      }
+    })
+    .catch(function () { /* network failure — static fallback values remain */ });
+}());
+</script>
 
 ---
 
