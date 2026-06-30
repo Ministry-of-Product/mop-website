@@ -286,15 +286,18 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 }
 
 /* markdown `---` renders the engraved divider: copper gear centered on a hairline */
-.glass-content hr {
+.glass-content hr,
+.glass-content footer::before {
   border: none;
   height: 24px;
-  margin: 2.5rem 0;
   background:
     url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 100 100%22 fill%3D%22%23B06A3A%22%3E%3Cpath fill-rule%3D%22evenodd%22 d%3D%22M 86.06 41.70 L 96.59 43.82 L 96.59 56.18 L 86.06 58.30 L 84.05 64.48 L 91.33 72.38 L 84.06 82.39 L 74.29 77.91 L 69.03 81.73 L 70.28 92.40 L 58.52 96.22 L 53.25 86.86 L 46.75 86.86 L 41.48 96.22 L 29.72 92.40 L 30.97 81.73 L 25.71 77.91 L 15.94 82.39 L 8.67 72.38 L 15.95 64.48 L 13.94 58.30 L 3.41 56.18 L 3.41 43.82 L 13.94 41.70 L 15.95 35.52 L 8.67 27.62 L 15.94 17.61 L 25.71 22.09 L 30.97 18.27 L 29.72 7.60 L 41.48 3.78 L 46.75 13.14 L 53.25 13.14 L 58.52 3.78 L 70.28 7.60 L 69.03 18.27 L 74.29 22.09 L 84.06 17.61 L 91.33 27.62 L 84.05 35.52 Z M50 30 A20 20 0 1 0 50.01 30 Z%22%3E%3C%2Fpath%3E%3Ccircle cx%3D%2250%22 cy%3D%2250%22 r%3D%228.5%22 fill%3D%22%23B06A3A%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") center / 20px 20px no-repeat,
     linear-gradient(var(--surface-card), var(--surface-card)) center / 44px 100% no-repeat,
     linear-gradient(var(--mop-iron-300), var(--mop-iron-300)) center / 100% var(--border-width-rule) no-repeat;
 }
+.glass-content hr { margin: 2.5rem 0; }
+/* the footer's top hairline gets the same engraved gear, for consistency */
+.glass-content footer::before { content: ""; display: block; margin-bottom: 2rem; }
 
 .glass-content code {
   font-family: var(--font-mono);
@@ -592,8 +595,6 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
    ============================================================ */
 .glass-content footer {
   margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: var(--border-width-rule) solid var(--mop-iron-300);
   text-align: center;
 }
 .glass-content footer p { color: var(--text-muted); margin-bottom: 1rem; }
