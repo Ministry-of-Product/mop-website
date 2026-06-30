@@ -94,4 +94,5 @@ A few of the ventures we've built and launched:
 
 ---
 
-[Explore the Venture Studio →](/venture-studio/) &nbsp;·&nbsp; [Work with us →](/advisory) &nbsp;·&nbsp; [About →](/about)
+[Explore the Venture Studio →](/venture-studio/) [Work with us →](/advisory) [About →](/about)
+{: .cta-row}

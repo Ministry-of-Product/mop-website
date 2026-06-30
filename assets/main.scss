@@ -362,6 +362,65 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 .btn-ghost:hover { border-color: var(--mop-iron-900); color: var(--text-strong); text-decoration: none; }
 
 /* ============================================================
+   Stamped CTA plates — end-of-page calls to action (MIN-1000)
+   ============================================================ */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin: 2.75rem 0 0.5rem;
+}
+.cta-row a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.86rem;
+  line-height: 1.1;
+  color: var(--mop-copper-light);
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  background: var(--metal-iron);
+  border: 1.5px solid var(--mop-copper);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    inset 0 0 0 1px rgba(176, 106, 58, 0.22),
+    var(--shadow-card);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+  transition: var(--transition-metal), color 0.18s ease, border-color 0.18s ease;
+}
+/* engraved gothic corner brackets */
+.cta-row a::before,
+.cta-row a::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid var(--mop-brass);
+  opacity: 0.85;
+  pointer-events: none;
+}
+.cta-row a::before { top: 4px;    left: 4px;  border-right: 0; border-bottom: 0; }
+.cta-row a::after  { bottom: 4px; right: 4px; border-left: 0;  border-top: 0; }
+.cta-row a:hover {
+  color: #fff;
+  border-color: var(--mop-copper-light);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    inset 0 0 0 1px rgba(201, 138, 91, 0.38),
+    var(--shadow-raised);
+  text-decoration: none;
+}
+.cta-row a:hover::before,
+.cta-row a:hover::after { opacity: 1; border-color: var(--mop-copper-light); }
+
+/* ============================================================
    Hero (home) + engraved divider
    ============================================================ */
 .workshop-hero {

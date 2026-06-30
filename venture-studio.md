@@ -40,4 +40,5 @@ We built an interactive model of the whole machine — fund a studio, build a ve
 
 ---
 
-[Run the simulator →](/venturestudio/) &nbsp;·&nbsp; [Work with us →](/advisory) &nbsp;·&nbsp; [About →](/about)
+[Run the simulator →](/venturestudio/) [Work with us →](/advisory) [About →](/about)
+{: .cta-row}

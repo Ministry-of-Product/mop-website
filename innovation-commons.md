@@ -161,4 +161,5 @@ The Commons is not a staffing pool for advisory work.
 
 ---
 
-[Visit the active Commons →](https://commons.ministryofproduct.com) &nbsp;·&nbsp; [Explore the Venture Studio →](/venture-studio/) &nbsp;·&nbsp; [About →](/about)
+[Visit the active Commons →](https://commons.ministryofproduct.com) [Explore the Venture Studio →](/venture-studio/) [About →](/about)
+{: .cta-row}

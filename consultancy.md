@@ -73,4 +73,5 @@ These are recent Consultancy products taken from concept to launch:
 
 ---
 
-[Get in touch →](mailto:info-at-ministryofproduct.com) &nbsp;·&nbsp; [Explore the Venture Studio →](/venture-studio/)
+[Get in touch →](mailto:info-at-ministryofproduct.com) [Explore the Venture Studio →](/venture-studio/)
+{: .cta-row}
