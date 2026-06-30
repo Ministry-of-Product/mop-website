@@ -2,7 +2,8 @@
 layout: default
 title: "TrueUp: Turning Expert Knowledge Into a Paid Product"
 date: 2025-04-16
-categories: case-studies
+categories: ventures
+permalink: /ventures/trueup/
 excerpt: Skilled tradespeople give away expertise for free on the phone every day. TrueUp changes that—a video platform with AI summaries, annotations, and payments built for people whose value comes from knowing how to do things.
 ---
 

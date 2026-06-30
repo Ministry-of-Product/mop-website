@@ -2,7 +2,8 @@
 layout: default
 title: "SoundPoints: A New Medium for Location-Based Audio"
 date: 2025-04-16
-categories: case-studies
+categories: ventures
+permalink: /ventures/soundpoints/
 excerpt: Audio content has no spatial dimension—until now. SoundPoints pins audio to GPS coordinates and unlocks it when you arrive. A two-sided marketplace for creators and explorers, currently in beta.
 ---
 

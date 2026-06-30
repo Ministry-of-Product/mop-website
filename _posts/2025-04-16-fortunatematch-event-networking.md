@@ -2,7 +2,8 @@
 layout: default
 title: "FortunateMatch: AI-Powered Networking That Works"
 date: 2025-04-16
-categories: case-studies
+categories: ventures
+permalink: /ventures/fortunatematch/
 excerpt: Event networking defaults to whoever is standing near you. FortunateMatch replaces that with intent-based AI matching—attendees declare what they need, and the system surfaces the most valuable introductions in real time.
 ---
 
