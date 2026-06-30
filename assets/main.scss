@@ -420,6 +420,22 @@ a:hover { color: var(--text-link-hover); text-decoration: underline; }
 .cta-row a:hover::before,
 .cta-row a:hover::after { opacity: 1; border-color: var(--mop-copper-light); }
 
+/* Buttons used inside markdown prose must beat the .glass-content a link
+   styles (color/underline), otherwise they render as plain blue links. */
+.glass-content a.btn,
+.glass-content a.btn-copper,
+.glass-content a.btn-ghost,
+.glass-content a.btn-primary { text-decoration: none; }
+.glass-content a.btn-copper,
+.glass-content a.btn-copper:hover,
+.glass-content a.btn-primary,
+.glass-content a.btn-primary:hover { color: #fff; }
+.glass-content a.btn-ghost,
+.glass-content a.btn-ghost:hover { color: var(--text-strong); }
+
+/* Top-of-page CTA (e.g. Innovation Commons → live Commons) */
+.commons-cta { margin: 1.5rem 0 2rem; }
+
 /* ============================================================
    Hero (home) + engraved divider
    ============================================================ */

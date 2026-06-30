@@ -10,6 +10,9 @@ meta_description: The Innovation Commons is the operating model of the Ministry 
 
 The Innovation Commons is how the [Venture Studio](/venture-studio/) builds. It is a shared environment designed for the phase before a company exists.
 
+[Visit the Innovation Commons →](https://commons.ministryofproduct.com/){: .btn .btn-copper}
+{: .commons-cta}
+
 Most systems push people quickly toward structure — roles, equity, expectations — before there is enough signal to justify them. The Innovation Commons takes a different approach. It creates a space where ideas can be explored through building, collaboration, and feedback without the immediate pressure to formalize.
 
 People participate by contributing to real work. They may bring their own ideas or join others based on interest and conviction. There is no assignment of roles, and no guaranteed ownership. Instead, influence and eventual ownership are earned through contribution over time.
