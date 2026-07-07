@@ -86,6 +86,15 @@ A few of the ventures we've built and launched:
 
 <div class="mop-plates">
 
+  <div class="mop-plate rollomap featured">
+    <a class="plate-link" href="/ventures/rollomap/" aria-label="View the RolloMap venture"></a>
+    <span class="feat-eyebrow">Featured Venture</span>
+    <h3>RolloMap</h3>
+    <div class="tl">Your contact graph, owned by you</div>
+    <p>A local-first contact graph that puts your relationships back in your hands. Every device keeps a complete copy, so offline always works and nothing lives behind someone else's login. Imported details carry their provenance, an open sync protocol keeps clients and servers interchangeable, and the whole thing runs on infrastructure you can self-host — with optional hosted sync when you'd rather not.</p>
+    <a class="more" href="/ventures/rollomap/">View the venture →</a>
+  </div>
+
   <div class="mop-plate trueup">
     <a class="plate-link" href="/ventures/trueup/" aria-label="View the TrueUp venture"></a>
     <h3>TrueUp</h3>
