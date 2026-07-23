@@ -4,80 +4,150 @@
   </p>
 </footer>
 
-<!-- Contact Modal -->
-<div id="contactModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe 
-      id="googleFormIframe"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/viewform?embedded=true" 
-      width="640" 
-      height="836" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0"
-      allow="fullscreen"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Contact the Ministry of Product">
-      Loading…
-    </iframe>
+<!-- Contact Modal — native form posting to Google Forms -->
+<div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" aria-hidden="true">
+  <div class="modal-content contact-modal">
+    <button type="button" class="close" aria-label="Close">&times;</button>
+
+    <div class="contact-panel">
+      <span class="eyebrow">Ministry of Product</span>
+      <h2 id="contactModalTitle" class="contact-title">How can we help?</h2>
+      <p class="contact-sub">Tell us what you're building. We read every note and get back to you.</p>
+
+      <form id="contactForm" class="contact-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeoBMkQfFJiFgrceWSoldQSoLvsBLEReSWRbpQ-Hg_t3qjFXw/formResponse"
+            method="POST" novalidate>
+
+        <div class="field">
+          <label for="cf-topic">What can we do for you?</label>
+          <select id="cf-topic" name="entry.880302375" required>
+            <option value="" disabled selected>Select one…</option>
+            <option value="I'm interested in talking with you about a project">I'm interested in talking with you about a project</option>
+            <option value="Other">Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cf-message">Tell us more</label>
+          <textarea id="cf-message" name="entry.330841537" rows="5"
+                    placeholder="A few sentences on what you're working on and how we can help." required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="cf-contact">How can we reach you?</label>
+          <input type="text" id="cf-contact" name="entry.92031431"
+                 placeholder="Email or phone" autocomplete="email" required>
+        </div>
+
+        <!-- honeypot: humans leave this empty; hidden from view and assistive tech -->
+        <div class="cf-hp" aria-hidden="true">
+          <label>Do not fill this in<input type="text" name="cf_company" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <button type="submit" class="cta-button contact-submit">
+          <span class="cf-btn-label">Send it over</span>
+        </button>
+        <p class="contact-error" role="alert" hidden>Something went wrong sending that. Mind trying again?</p>
+      </form>
+
+      <div class="contact-success" hidden>
+        <div class="contact-success-mark" aria-hidden="true"><span class="gear spin"></span></div>
+        <h3>Message received.</h3>
+        <p>Thanks for reaching out — we'll be in touch soon.</p>
+        <button type="button" class="btn btn-ghost contact-reset">Send another</button>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
-// Suppress harmless Google Forms font loading errors
-(function() {
-  // Store original console methods
-  const originalError = console.error;
-  const originalWarn = console.warn;
-  
-  // Override console.error to filter Google Forms font errors
-  console.error = function(...args) {
-    const message = args.join(' ');
-    // Filter out Google Forms font loading errors
-    if (message.includes('docs.google.com') && 
-        (message.includes('fonts') || 
-         message.includes('woff2') || 
-         message.includes('ERR_FILE_NOT_FOUND') ||
-         message.includes('filesystem:'))) {
-      return; // Suppress this error
-    }
-    // Allow other errors through
-    originalError.apply(console, args);
-  };
-  
-  // Also handle unhandled promise rejections that might be related
-  window.addEventListener('unhandledrejection', function(e) {
-    const reason = e.reason ? String(e.reason) : '';
-    if (reason.includes('docs.google.com') && reason.includes('fonts')) {
-      e.preventDefault();
-    }
-  });
-})();
-
-// Modal functionality
 document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('contactModal');
-  const btn = document.getElementById('contactBtn');
-  const span = document.getElementsByClassName('close')[0];
+  var modal   = document.getElementById('contactModal');
+  var openBtn = document.getElementById('contactBtn');
+  if (!modal || !openBtn) return;
 
-  // Open modal when button is clicked
-  btn.onclick = function() {
-    modal.style.display = 'block';
+  var closeBtn = modal.querySelector('.close');
+  var form     = document.getElementById('contactForm');
+  var success  = modal.querySelector('.contact-success');
+  var errorMsg = modal.querySelector('.contact-error');
+  var submit   = modal.querySelector('.contact-submit');
+  var btnLabel = modal.querySelector('.cf-btn-label');
+  var lastFocused = null;
+
+  function openModal() {
+    lastFocused = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    var first = modal.querySelector('select, input, textarea, button');
+    if (first) first.focus();
   }
 
-  // Close modal when X is clicked
-  span.onclick = function() {
-    modal.style.display = 'none';
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
   }
 
-  // Close modal when clicking outside of it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
+  openBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  function showSuccess() {
+    form.hidden = true;
+    success.hidden = false;
+  }
+
+  modal.querySelector('.contact-reset').addEventListener('click', function() {
+    form.reset();
+    form.hidden = false;
+    success.hidden = true;
+    errorMsg.hidden = true;
+    var first = modal.querySelector('select');
+    if (first) first.focus();
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    errorMsg.hidden = true;
+
+    // honeypot — if a bot filled the hidden field, fake success and drop it
+    if (form.elements['cf_company'] && form.elements['cf_company'].value) {
+      showSuccess();
+      return;
     }
-  }
 
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    submit.disabled = true;
+    btnLabel.textContent = 'Sending…';
+
+    var data = new URLSearchParams();
+    data.append('entry.880302375', form.elements['entry.880302375'].value);
+    data.append('entry.330841537', form.elements['entry.330841537'].value);
+    data.append('entry.92031431',  form.elements['entry.92031431'].value);
+    data.append('fvv', '1');
+    data.append('pageHistory', '0');
+
+    // Google Forms doesn't send CORS headers, so we submit no-cors (opaque
+    // response) — the POST still records. We resolve optimistically.
+    fetch(form.action, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data.toString()
+    }).then(function() {
+      showSuccess();
+    }).catch(function() {
+      errorMsg.hidden = false;
+    }).finally(function() {
+      submit.disabled = false;
+      btnLabel.textContent = 'Send it over';
+    });
+  });
 });
 </script>
